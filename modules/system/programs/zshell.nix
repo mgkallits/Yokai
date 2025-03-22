@@ -57,7 +57,7 @@
       edit = "sudo -e"; # Edit files with elevated privileges using the default editor
       update = "sudo nixos-rebuild switch --flake ~/.dotfiles/."; # Update and switch to the new NixOS configuration
       # update-all = "sudo nixos-rebuild switch --upgrade";
-      gs = "git status --short --color"; # Show a short and colored status of the Git repository
+      gs = "git status --short --decorate --color"; # Show a short and colored status of the Git repository
       gl = "git log --oneline --graph --decorate --color"; # Display a concise and colorful log of commits
       gco = "git checkout"; # Checkout branches or files in Git
       gcm = "git commit -m"; # Commit changes with a message in Git
