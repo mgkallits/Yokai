@@ -1,2 +1,5 @@
-# .AssembleConfig
-This is my configuration for my nix-aspect of my machines.
+# My NixOS configurations
+
+## Hosts
+
+There are two available hosts, 'kitsune' for my pc and 'tanuki' for my laptop
