@@ -1,0 +1,96 @@
+{ config, pkgs, ... }:
+
+{
+  # Configure the script as a file in the .local/bin directory with executable permissions
+  home.file.".local/bin/generate_vscode_theme.sh".text = ''
+    #!/usr/bin/env bash
+
+    # Define paths
+    STYLIX_COLORS=~/.config/stylix/generated.json
+    VSCODE_THEME_DIR=~/.config/Code/User/themes
+    VSCODE_THEME_FILE=$VSCODE_THEME_DIR/stylix-theme.json
+
+    # Ensure the theme directory exists
+    mkdir -p "$VSCODE_THEME_DIR"
+
+    # Extract colors from Stylix and write the theme file
+    jq -n \
+      --arg base00 "$(jq -r '.base00' < "$STYLIX_COLORS")" \
+      --arg base01 "$(jq -r '.base01' < "$STYLIX_COLORS")" \
+      --arg base02 "$(jq -r '.base02' < "$STYLIX_COLORS")" \
+      --arg base03 "$(jq -r '.base03' < "$STYLIX_COLORS")" \
+      --arg base04 "$(jq -r '.base04' < "$STYLIX_COLORS")" \
+      --arg base05 "$(jq -r '.base05' < "$STYLIX_COLORS")" \
+      --arg base06 "$(jq -r '.base06' < "$STYLIX_COLORS")" \
+      --arg base07 "$(jq -r '.base07' < "$STYLIX_COLORS")" \
+      --arg base08 "$(jq -r '.base08' < "$STYLIX_COLORS")" \
+      --arg base09 "$(jq -r '.base09' < "$STYLIX_COLORS")" \
+      --arg base0A "$(jq -r '.base0A' < "$STYLIX_COLORS")" \
+      --arg base0B "$(jq -r '.base0B' < "$STYLIX_COLORS")" \
+      --arg base0C "$(jq -r '.base0C' < "$STYLIX_COLORS")" \
+      --arg base0D "$(jq -r '.base0D' < "$STYLIX_COLORS")" \
+      --arg base0E "$(jq -r '.base0E' < "$STYLIX_COLORS")" \
+      --arg base0F "$(jq -r '.base0F' < "$STYLIX_COLORS")" \
+      '
+      {
+        "name": "Stylix Generated Theme",
+        "type": "dark",
+        "colors": {
+          "editor.background": ("#" + $base00),
+          "editor.foreground": ("#" + $base05),
+          "editorCursor.foreground": ("#" + $base06),
+          "editor.lineHighlightBackground": ("#" + $base01),
+          "editor.selectionBackground": ("#" + $base02),
+          "activityBar.background": ("#" + $base00),
+          "sideBar.background": ("#" + $base01),
+          "sideBar.foreground": ("#" + $base04),
+          "statusBar.background": ("#" + $base0B),
+          "statusBar.foreground": ("#" + $base06)
+        },
+        "tokenColors": [
+          {
+            "scope": "comment",
+            "settings": {
+              "foreground": ("#" + $base03)
+            }
+          },
+          {
+            "scope": "keyword",
+            "settings": {
+              "foreground": ("#" + $base09)
+            }
+          },
+          {
+            "scope": "string",
+            "settings": {
+              "foreground": ("#" + $base08)
+            }
+          },
+          {
+            "scope": "variable",
+            "settings": {
+              "foreground": ("#" + $base03)
+            }
+          },
+          {
+            "scope": "constant.numeric",
+            "settings": {
+              "foreground": ("#" + $base0E)
+            }
+          },
+          {
+            "scope": "function",
+            "settings": {
+              "foreground": ("#" + $base0D)
+            }
+          }
+        ]
+      }
+      ' > "$VSCODE_THEME_FILE"
+
+    echo "VSCode theme generated at $VSCODE_THEME_FILE"
+  '';
+
+  # Make the script executable
+  home.file.".local/bin/generate_vscode_theme.sh".executable = true;
+}

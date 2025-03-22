@@ -1,0 +1,56 @@
+
+{ config, pkgs, ... }:
+
+let
+  # Define the script's content
+  scriptContent = ''
+    #!/bin/sh
+
+    # Set output file path
+    output_file="$HOME/.cache/wal/stylix-theme.yaml"
+
+    # Check if colors.yml exists
+    if [ ! -f "$HOME/.cache/wal/colors.yml" ]; then
+      echo "Error: $HOME/.cache/wal/colors.yml not found."
+      exit 1
+    fi
+
+    # Generate YAML file for Stylix from pywal colors.yml
+    yq eval -o=js --yaml-output '
+      {
+        base16: {
+          base00: .special.background,
+          base01: .colors.color8,
+          base02: .colors.color10,
+          base03: .colors.color9,
+          base04: .colors.color11,
+          base05: .special.foreground,
+          base06: .colors.color14,
+          base07: .colors.color15,
+          base08: .colors.color1,
+          base09: .colors.color3,
+          base0A: .colors.color4,
+          base0B: .colors.color2,
+          base0C: .colors.color6,
+          base0D: .colors.color4,
+          base0E: .colors.color5,
+          base0F: .colors.color13
+        }
+      }
+    ' "$HOME/.cache/wal/colors.yml" > "$output_file"
+
+    echo "Generated $output_file for Stylix."
+
+  '';
+
+
+in {
+  # home.file.".local/bin/generate-stylix-theme.sh".text = scriptContent;
+
+  # home.file.".local/bin/generate-stylix-theme.sh".executable = true;
+
+  home.packages = [
+    pkgs.yq-go
+  ];
+
+}
