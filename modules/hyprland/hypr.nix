@@ -10,7 +10,7 @@
   # services.xserver.displayManager.defaultSession = "hyprland";
   services.xserver.enable = false;  # Disable X server (not needed for Hyprland)
 
-  vuwsm.enable = true;
+  programs.uwsm.enable = true;
   programs.xwayland.enable = true;
   programs.hyprland = {
     enable = true;
@@ -43,17 +43,17 @@
 
 
 
-  config = lib.mkIf (display-manager == "" && programs.uwsm.enable) {
-    programs.zsh = { 
-      loginShellInit =  ''
-      exec uwsm app -- openrgb -p ~/.config/OpenRGB/profile.orp &
-      
-      if uwsm check may-start; then
-          exec uwsm start hyprland-uwsm.desktop
-      fi
-      '';
-    };
+
+  programs.zsh = lib.mkIf (display-manager == "" && config.programs.uwsm.enable) { 
+    loginShellInit =  ''
+    exec uwsm app -- openrgb -p ~/.config/OpenRGB/profile.orp &
+    
+    if uwsm check may-start; then
+        exec uwsm start hyprland-uwsm.desktop
+    fi
+    '';
   };
+
 
 
   # services.xserver = {
