@@ -10,7 +10,7 @@
   # services.xserver.displayManager.defaultSession = "hyprland";
   services.xserver.enable = false;  # Disable X server (not needed for Hyprland)
 
-  programs.uwsm.enable = true;
+  vuwsm.enable = true;
   programs.xwayland.enable = true;
   programs.hyprland = {
     enable = true;
@@ -41,14 +41,18 @@
     trusted-public-keys = ["hyprland.cachix.org-1:a7pgxzMz7+chwVL3/pzj6jIBMioiJM7ypFP8PwtkuGc="];
   };
 
-  programs.zsh = { 
-    loginShellInit =  ''
-    exec uwsm app -- openrgb -p ~/.config/OpenRGB/profile.orp &
-    
-    if uwsm check may-start; then
-        exec uwsm start hyprland-uwsm.desktop
-    fi
-    '';
+
+
+  config = lib.mkIf (display-manager == "" && programs.uwsm.enable) {
+    programs.zsh = { 
+      loginShellInit =  ''
+      exec uwsm app -- openrgb -p ~/.config/OpenRGB/profile.orp &
+      
+      if uwsm check may-start; then
+          exec uwsm start hyprland-uwsm.desktop
+      fi
+      '';
+    };
   };
 
 
@@ -189,9 +193,6 @@
 
     pkgs.zathura
 
-    pkgs.lxappearance
-
-
     pkgs.xclip
 
 
@@ -261,10 +262,6 @@
 
   programs.dconf.enable = true;
   
-  # services.displayManager.defaultSession = "plasma";
-  # services.displayManager.sddm.wayland.enable = true;
-
-  # programs.xwayland.enable = true;
 
   security.sudo.wheelNeedsPassword = true;
 

@@ -21,7 +21,7 @@
   browser = "brave";
   gitUsername = "mgkallits";
   gitEmail = "mgkallits@gmail.com";
-  display-manager = "sddm"; # one of: "startx", "sddm"
+  display-manager = ""; # one of: "startx", "sddm", "" -> no display-manager meaning you have to log in using tty or a script
 
   # System state version IMPORTANT! Do not change after initial setup (or else? ++)
   version = "24.05";
