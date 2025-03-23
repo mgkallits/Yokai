@@ -66,8 +66,12 @@
             path = ./modules;
             exclude = [
               ./modules/system/boot/secure-boot/nix
-              ./modules/user/home
+              ./modules/user
             ];
+          } ++
+          ylib.umport {
+            path = ./modules/user/${username}@${hostname}.nix
+            recursive = false;
           }
           ++ [
             {
