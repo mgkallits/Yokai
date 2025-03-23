@@ -5,7 +5,7 @@
   # User and host information
   username = "mgkallits";  # Your username
   fullname = "Marios Georgios Kallitsounakis";
-  hostname = "kitsune";    # The hostname of the machine, one of: kitsune, tanuki
+  hostname = "tanuki";    # The hostname of the machine, one of: kitsune, tanuki
   system = "x86_64-linux";  # Target system architecture
   
   # Localization settings
