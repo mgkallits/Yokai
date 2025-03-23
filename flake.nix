@@ -51,7 +51,7 @@
       ...
     }:
     let
-      inherit (import ./settings.nix) hostname system;
+      inherit (import ./settings.nix) hostname system username;
       ylib = nypkgs.lib."${system}";
     in
     {
@@ -64,14 +64,11 @@
         modules =
           ylib.umport {
             path = ./modules;
+            include = [ (./modules/user + "/${username}@${hostname}.nix") ];
             exclude = [
               ./modules/system/boot/secure-boot/nix
               ./modules/user
             ];
-          } ++
-          ylib.umport {
-            path = ./modules/user/${username}@${hostname}.nix
-            recursive = false;
           }
           ++ [
             {
