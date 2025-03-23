@@ -1,4 +1,4 @@
-{ config, pkgs, ... }: 
+{ config, lib, pkgs, ... }: 
 
 {
   nix = {
@@ -28,16 +28,16 @@
 
       # Additional substituters for extra package caches
       extra-substituters = [
-        "https://hyprland.cachix.org"    # Hyprland community cache
         "https://nix-community.cachix.org" # Nix community cache
-        # "https://devenv.cachix.org"      # Devenv cache for development environments
+        (lib.mkIf (config.programs.hyprland.enable) "https://hyprland.cachix.org")    # Hyprland community cache
+        "https://devenv.cachix.org"      # Devenv cache for development environments
       ];
 
       # Additional trusted public keys for the extra substituters
       extra-trusted-public-keys = [
-        "hyprland.cachix.org-1:a7pgxzMz7+chwVL3/pzj6jIBMioiJM7ypFP8PwtkuGc="
         "nix-community.cachix.org-1:mB9FSh9qf2dCimDSUo8Zy7bkq5CX+/rkCWyvRCYg3Fs="
-        # "devenv.cachix.org-1:w1cLUi8dv3hnoSPGAuibQv+f9TZLr6cv/Hm9XgU50cw="
+        (lib.mkIf (config.programs.hyprland.enable) "hyprland.cachix.org-1:a7pgxzMz7+chwVL3/pzj6jIBMioiJM7ypFP8PwtkuGc=" )
+        "devenv.cachix.org-1:w1cLUi8dv3hnoSPGAuibQv+f9TZLr6cv/Hm9XgU50cw="
       ];
     };
   };
