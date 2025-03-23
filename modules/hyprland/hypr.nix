@@ -1,4 +1,4 @@
-{ inputs, config, pkgs, lib, username, system,  ... }: 
+{ inputs, config, pkgs, lib, username, system, display-manager,  ... }: 
 
 {
 
