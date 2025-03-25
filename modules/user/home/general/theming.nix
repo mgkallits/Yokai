@@ -2,23 +2,17 @@
 
 
 {
-  # home.pointerCursor = {
-  #   gtk.enable = true;
-  #   # x11.enable = true;
-  #   # package = pkgs.bibata-cursors;
-  #   # name = "Bibata-Modern-Classic";
-  #   name = "Notwaita-Black";
-  #   # size = 16;
-  # };
+  home.pointerCursor = {
+    gtk.enable = true;
+    # x11.enable = true;
+    # package = pkgs.bibata-cursors;
+    # name = "Bibata-Modern-Classic";
+    name = "Notwaita-Black";
+    # size = 16;
+  };
 
-  # gtk = {
-  #   enable = true;
-
-
-    # theme = {
-    #   package = lib.mkForce pkgs.adw-gtk3;
-    #   name = lib.mkForce "adw-gtk3";
-    # };
+  gtk = {
+    enable = true;
 
     # theme = {
     #   package = lib.mkForce pkgs.flat-remix-gtk;
@@ -26,25 +20,13 @@
     # };
 
     # iconTheme = {
-    #   # package = pkgs.adwaita-icon-theme;
-    #   name = "Suru-Plus";
+    #   package = pkgs.adwaita-icon-theme;
+    #   name = "Adwaita";
     # };
 
     # font = {
     #   name = "Sans";
     #   size = 11;
     # };
-  # };
-
-  # qt.enable = true;
-  # qt.platformTheme = lib.mkForce { name = "gtk"; };
-  # qt.style.name = lib.mkForce "Suru-Plus";  
-
-
-  # qt = {
-  #   enable = true;
-  #   platformTheme = lib.mkForce { name = "gtk3"; };# or "gtk3"
-  #   # style.name = lib.mkForce "gtk4"; # or "gtk3"
-  # };
-
+  };
 }

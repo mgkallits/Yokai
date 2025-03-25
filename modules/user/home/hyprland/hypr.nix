@@ -50,9 +50,9 @@
   # };
 
 
-  home.file.".config/hypr/hyprland.conf" = {
-    source = ./hyprland.conf;
-  };
+  # home.file.".config/hypr/hyprland.conf" = {
+  #   source = ./hyprland.conf;
+  # };
 
 
   home.file.".config/waybar/waybar-colors.css".source = config.lib.file.mkOutOfStoreSymlink "${config.xdg.cacheHome}/wal/colors-waybar.css";

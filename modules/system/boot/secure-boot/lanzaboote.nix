@@ -1,13 +1,23 @@
-{ config, pkgs, lib, inputs, ... }: 
+{
+  config,
+  pkgs,
+  lib,
+  hostname,
+  inputs,
+  secure-boot,
+  ...
+}:
 
 {
   imports = [ inputs.lanzaboote.nixosModules.lanzaboote ];
-  
-  environment.systemPackages = [ pkgs.sbctl ];
 
-  boot.loader.systemd-boot.enable = lib.mkForce false;
+  config = lib.mkIf (hostname == "kitsune" && secure-boot == true) {
 
-  boot.lanzaboote.enable = true;
-  
-  boot.lanzaboote.pkiBundle = "/etc/secureboot";
+    environment.systemPackages = [ pkgs.sbctl ];
+
+    boot.loader.systemd-boot.enable = lib.mkForce false;
+
+    boot.lanzaboote.enable = true;
+    boot.lanzaboote.pkiBundle = "/etc/secureboot";
+  };
 }

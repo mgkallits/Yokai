@@ -1,28 +1,44 @@
-{ pkgs, username, ... }:
+{
+  config,
+  pkgs,
+  lib,
+  hostname,
+  username,
+  ...
+}:
 
 {
+  config = lib.mkIf (hostname == "kitsune") {
+    # Virtualization / Containers
 
-  # Virtualization / Containers
-  
-  # virtualisation.libvirtd.enable = true;
+    # virtualisation.libvirtd.enable = true;
 
-  # == Podman ==
+    # == Podman ==
 
-  # virtualisation.podman = {
-  #   enable = true;
-  #   dockerCompat = true;
-  #   defaultNetwork.settings.dns_enabled = true;
-  # };
+    # virtualisation.podman = {
+    #   enable = true;
+    #   dockerCompat = true;
+    #   defaultNetwork.settings.dns_enabled = true;
+    # };
 
-  # == Docker ==
+    # == Docker ==
 
-  virtualisation.docker = { enable = false; };
+    virtualisation.docker = {
+      enable = false;
+    };
 
-  users.groups.docker.members = [ "${username}" ];
+    users.groups.docker.members = [ "${username}" ];
 
-  environment = { systemPackages = [ pkgs.docker pkgs.docker-compose ]; };
+    environment = {
+      systemPackages = [
+        pkgs.docker
+        pkgs.docker-compose
+      ];
+    };
 
-  virtualisation.docker = { liveRestore = false; }; # IMPORTANT: don't uncomment 
-  # Read: https://github.com/NixOS/nixpkgs/issues/182916
-
+    virtualisation.docker = {
+      liveRestore = false;
+    }; # IMPORTANT: don't uncomment
+    # Read: https://github.com/NixOS/nixpkgs/issues/182916
+  };
 }
