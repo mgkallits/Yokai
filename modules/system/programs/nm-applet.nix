@@ -1,6 +1,6 @@
 { config, pkgs, ... }:
 
 {
-  programs.nm-applet.enable = true;
-  programs.nm-applet.indicator = true;
+  programs.nm-applet.enable = false;
+  programs.nm-applet.indicator = false;
 }
