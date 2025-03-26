@@ -40,7 +40,7 @@
     
     # My packages
     # vim wget killall openssl
-    # git tree brave bitwarden thunderbird vlc neofetch  
+    # git tree brave thunderbird vlc neofetch  
     # alacritty yazi neovim zathura apacheHttpd htop dig  
     # grsync nextcloud-client python312Packages.pywal
     # pywal
