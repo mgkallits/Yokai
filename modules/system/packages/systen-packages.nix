@@ -82,7 +82,6 @@
 
     # sox
     # yad
-    # flatpak
     # ffmpeg
 
     # GTK Packages
@@ -171,7 +170,7 @@
     #   kdePackages.qtsvg usbutils lxqt.lxqt-policykit
 
     #   #### Standard Packages
-    #       sox yad flatpak
+    #       sox yad 
     #   ffmpeg neovim
 
     #   #### GTK
