@@ -7,6 +7,8 @@
 }:
 
 {
+  # See: https://discourse.nixos.org/t/how-to-use-fingerprint-unlocking-how-to-set-up-fprintd-english/21901/6
+
   config = lib.mkIf (hostname == "tanuki") {
     services.fprintd.enable = true;
 
