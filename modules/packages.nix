@@ -86,7 +86,6 @@
     tldr
     # sox
     # yad
-    # flatpak
     # ffmpeg
 
     # GTK Packages
@@ -181,7 +180,7 @@
     #   kdePackages.qtsvg usbutils lxqt.lxqt-policykit
 
     #   #### Standard Packages
-    #   git fzf vim tldr sox yad flatpak
+    #   git fzf vim tldr sox yad
     #   ffmpeg neovim
 
     #   #### GTK

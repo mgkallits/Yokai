@@ -6,8 +6,9 @@ config, options, hostname, ... }:
     hostName = "${hostname}";
     networkmanager.enable = true;
   };
-  networking.interfaces.wlp1s0.useDHCP = true;
-  networking.wireless.interfaces = ["wlp1s0"];
+
+  # networking.interfaces.wlp1s0.useDHCP = true;
+  # networking.wireless.interfaces = ["wlp1s0"];
 
 
 

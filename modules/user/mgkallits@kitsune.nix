@@ -45,7 +45,6 @@
       "realtime"
     ];
     packages = with pkgs; [
-      bitwarden-desktop
       feh
       kitty
       # dmenu

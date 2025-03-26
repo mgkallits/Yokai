@@ -193,6 +193,7 @@
           ## the rest of your R packages here
           devtools
           ggplot2
+          binom
         ];
       }
     )
