@@ -1,5 +1,5 @@
 { config, pkgs, ... }:
 
 {
-  services.hyprpaper.enable = true;
+  services.hyprpaper.enable = false;
 }
