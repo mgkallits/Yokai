@@ -31,6 +31,7 @@
 
     # Kernel parameters for boot
     kernelParams = [
+      "amd_pstate=active"
       "nohibernate"
       "quiet"                     # Suppress boot messages
       "splash"                    # Enable splash screen

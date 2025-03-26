@@ -9,7 +9,7 @@
 {
   config = lib.mkIf (hostname == "tanuki") {
     services.tlp = {
-      enable = true; # Whether to enable the TLP power management daemon.
+      enable = false; # Whether to enable the TLP power management daemon.
     };
   };
 }
