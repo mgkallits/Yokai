@@ -8,7 +8,7 @@ config, options, hostname, ... }:
   };
 
   # networking.interfaces.wlp1s0.useDHCP = true;
-  # networking.wireless.interfaces = ["wlp1s0"];
+  # nentworking.wireless.interfaces = ["wlp1s0"];
 
 
 
