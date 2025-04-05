@@ -7,7 +7,7 @@
 
 {
   programs.appimage = {
-    enable = false;
-    binfmt = false; # Optional: Enables seamless execution of AppImages
+    enable = true;
+    binfmt = true; # Optional: Enables seamless execution of AppImages
   };
 }
