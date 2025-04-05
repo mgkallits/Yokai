@@ -5,6 +5,9 @@
     nixpkgs = {
       url = "github:nixos/nixpkgs?ref=nixos-unstable";
     };
+    nixpkgs-stable = {
+      url = "github:nixos/nixpkgs?ref=nixos-24.11";
+    };
     nypkgs = {
       url = "github:yunfachi/nypkgs";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -47,19 +50,24 @@
     inputs@{
       self,
       nixpkgs,
+      nixpkgs-stable,
       nypkgs,
       ...
     }:
     let
       inherit (import ./settings.nix) hostname system username;
       ylib = nypkgs.lib."${system}";
+      stpkgs = import nixpkgs-stable {
+        inherit system;
+        config.allowUnfree = true;
+      };
     in
     {
       nixosConfigurations."${hostname}" = nixpkgs.lib.nixosSystem rec {
         inherit system;
         specialArgs = import ./settings.nix // {
           inherit (nixpkgs) lib;
-          inherit inputs ylib;
+          inherit inputs ylib stpkgs;
         };
         modules =
           ylib.umport {
