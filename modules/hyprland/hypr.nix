@@ -10,12 +10,8 @@
 }:
 
 {
-
-  # nixpkgs.overlays =  [
-  #   (import ./waybar/waybar-overlay.nix)
-  # ];
-
   # Enable necessary services for Wayland
+
   # services.xserver.displayManager.defaultSession = "hyprland";
   services.xserver.enable = false; # Disable X server (not needed for Hyprland)
 
@@ -59,9 +55,8 @@
   environment.systemPackages = [
     pkgs.wofi
     pkgs.hyprpaper
-    pkgs.swww
-    # inputs.swww.packages.${pkgs.system}.swww
     pkgs.foot
+
     pkgs.musl
     pkgs.uwufetch
     pkgs.hyprsysteminfo
@@ -70,18 +65,19 @@
     pkgs.xorg.xeyes
 
     pkgs.dig
+    
+    # TODO: sort out which pkgs are not nedded.
 
-    # pkgs.kdePackages.qtwayland
-    # pkgs.kdePackages.qtsvg
+    pkgs.kdePackages.qtwayland
+    pkgs.kdePackages.qtsvg
 
     # kdePackages.kio-fuse #to mount remote filesystems via FUSE
     # kdePackages.kio-extras #extra protocols support (sftp, fish and more)
 
-    pkgs.waybar
 
     # Qt Wayland Support
-    # pkgs.libsForQt5.qt5.qtwayland
-    # pkgs.kdePackages.qtwayland
+    pkgs.libsForQt5.qt5.qtwayland
+    pkgs.kdePackages.qtwayland
 
     pkgs.wofi-power-menu
     # pkgs.nvd
@@ -92,28 +88,29 @@
     pkgs.glib
     pkgs.gio-sharp
 
+
+
     pkgs.python3
     # pkgs.python3Packages.pygobject3
     pkgs.python312Packages.pygobject3
     pkgs.python313Packages.pygobject3
 
     pkgs.mpd
-    pkgs.waybar-mpris
 
     pkgs.eww
 
     pkgs.xwayland
-    pkgs.sxhkd
 
     pkgs.nwg-look # GTK settings editor, designed to work properly in wlroots-based Wayland environment
 
     pkgs.vscode-fhs
 
-    inputs.hyprswitch.packages.${system}.default
 
     pkgs.qjackctl
     pkgs.qpwgraph
     pkgs.helvum
+
+
 
     pkgs.papirus-icon-theme
 
@@ -201,7 +198,14 @@
       }
     )
 
+    pkgs.cdrkit
+
+
+
   ];  
+
+
+  services.fwupd.enable = true;
   
 # programs.gnupg.agent = {
 #   enable = true;
@@ -238,10 +242,6 @@
   # };
 # ----
 
-  programs.dconf.enable = true;
 
-  security.sudo.wheelNeedsPassword = true;
-
-  environment.localBinInPath = true;
 
 }
