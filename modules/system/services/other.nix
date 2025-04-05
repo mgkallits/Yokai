@@ -7,7 +7,7 @@
     # qemuGuest.enable = true;
     # spice-vdagentd.enable = true;  # enable copy and paste between host and guest
  
-    blueman.enable = false;
+    # blueman.enable = false; # -> moved to modules/system/hardware/bluetooth.nix
   };
 
   services = {
