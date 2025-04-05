@@ -1,0 +1,60 @@
+{
+    //  ╭─ UTILITIES ───────────────────────╮
+    //  │     Systemd Failed Units         │
+    //  │     Idle Inhibitor               │
+    //  │     Brightness (Backlight)       │
+    //  │     Date & Time (Clock)          │
+    //  │     System Tray                  │
+    //  ╰───────────────────────────────────╯
+    "systemd-failed-units": {
+        "hide-on-ok": true,
+        "format": "\u200A\u200A\u202F\u202F\u202Ffailed systemd units: {nr_failed_system} (system) {nr_failed_user} (user)",
+        // "format-ok": "✓",
+        "system": true,
+        "user": true
+    },
+    "idle_inhibitor": {
+        "format": "{icon}",
+        "format-icons": {
+            "activated": "\u202F\u200A\u200A",
+            "deactivated": "\u202F\u200A\u200A"
+        }
+    },
+    "bluetooth": {
+        "format": "",
+        "format-on": "\u200A<span font-size='14.8pt'></span>\u200A\u200A",
+        "format-off": "",
+        "format-connected-battery": "{device_battery_percentage}% <span font-size='13.3pt'></span>\u200A\u200A",
+        // "format-device-preference": [ "device1", "device2" ], // preference list deciding the displayed device
+        "tooltip-format": "{controller_alias}\t{controller_address}\n\n{num_connections} connected",
+        "tooltip-format-connected": "{controller_alias}\t{controller_address}\n\n{num_connections} connected\n\n{device_enumerate}",
+        "tooltip-format-enumerate-connected": "{device_alias}\t{device_address}",
+        "tooltip-format-enumerate-connected-battery": "{device_alias}\t{device_address}\t{device_battery_percentage}%"
+    },
+    "backlight": {
+        // "device": "acpi_video1",
+        "format": "{percent}% <span font-size='13.3pt'>{icon}</span>\u200A\u200A\u200A",
+        "format-icons": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ],
+        "tooltip-format": "Current display brightness"
+    },
+    "clock": {
+        "interval": 1,
+        "timezone": "Europe/Athens",
+        "format": " {:%H:%M}",
+        "format-alt": " {:%a %d %b\u202F\u202F %H:%M}",
+        "tooltip": false
+    },
+    "tray": {
+        "spacing": 10
+    }
+}

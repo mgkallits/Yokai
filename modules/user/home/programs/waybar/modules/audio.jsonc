@@ -1,0 +1,52 @@
+{
+    //  ╭─ AUDIO MODULES ───────────────────╮
+    //  │    Media Player (Spotify)        │
+    //  │    Mic Privacy Indicator         │
+    //  │    Volume Control (Wireplumber   │
+    //  ╰───────────────────────────────────╯
+    "custom/media": {
+        "format": "\u202F\u202F\u200A\u200A {}",
+        "escape": true,
+        "return-type": "json",
+        "max-length": 100,
+        // "interval": 30, // Remove this if your script is endless and write in loop
+        "on-click": "playerctl -p spotify play-pause",
+        "on-click-right": "killall spotify",
+        "smooth-scrolling-threshold": 10, // This value was tested using a trackpad, it should be lowered if using a mouse.
+        "on-scroll-up": "playerctl -p spotify next",
+        "on-scroll-down": "playerctl -p spotify previous",
+        "exec": "~/.config/waybar/scripts/mediaplayer-wrapper.sh 2> /dev/null", // Script in resources/custom_modules folder
+        "exec-if": "pgrep spotify"
+    },
+    "custom/mic": {
+        "format": "<span font-size='13.3pt'>{}</span>",
+        "return-type": "json",
+        "interval": 1,
+        "exec": "~/.config/waybar/scripts/mic.sh status",
+        "exec-if": "~/.config/waybar/scripts/mic.sh check",
+        "tooltip": true,
+        "tooltip-format": "Mic is currently in use",
+        "format-icons": {
+            "unmuted": "",
+            "muted": ""
+        }
+    },
+    "wireplumber": {
+        "format": "{volume}% <span font-size='13pt'>{icon}</span>\u200A\u200A",
+        "format-muted": "\u200A<span font-size='13pt'></span>\u202F\u200A\u200A",
+        "max-volume": 150,
+        "scroll-step": 0.4,
+        "format-icons": [
+            "\u202F",
+            "\u202F",
+            "\u202F\u200A\u200A\u200A"
+        ],
+        "on-click": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle",
+        "on-click-middle": "helvum",
+        "on-click-right": "easyeffects",
+        "tooltip": true,
+        "tooltip-format": "{volume}% | {node_name}",
+        "smooth-scrolling-threshold": 1,
+        "reverse-scrolling": false
+    }
+}

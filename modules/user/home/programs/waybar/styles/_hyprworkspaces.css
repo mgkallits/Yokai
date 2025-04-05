@@ -1,0 +1,87 @@
+/*
+╭───────────────────────────╮
+│                           │
+│    HYPRLAND WORKSPACES    │
+│                           │
+╰───────────────────────────╯
+*/
+
+#workspaces {
+    padding: 2px 2px;
+}
+
+#workspaces button {
+    background: @color0;
+    color: @foreground;
+    padding: 2px 5px;
+    margin: 2px;
+    border-radius: 4px;
+    border-bottom: 0px;
+    transition: all 0.15s ease-in-out;
+}
+
+/* Workspace Hover Effect (applies to all states) */
+#workspaces button:hover {
+    background: @color3;
+    /* Different from your module hover color */
+    color: @background;
+    /* box-shadow: 0px 0px 3px @color11; */
+}
+
+/* Workspace States - These will override the hover when applicable */
+#workspaces button.occupied {
+    background: @color9;
+    color: @foreground;
+    box-shadow: inset 0px 0px 3px @color9;
+}
+
+#workspaces button.empty {
+    background: transparent;
+    color: @color8;
+}
+
+#workspaces button.focused {
+    background: @color10;
+    color: @background;
+    font-weight: bold;
+    border: 1px solid @color10;
+    border-bottom: 0px;
+    box-shadow: 0px 0px 5px @color10;
+}
+
+#workspaces button.active {
+    border-bottom: 0px;
+}
+
+#workspaces button.urgent {
+    background: @color12;
+    color: @background;
+    animation: urgent-pulse 1s infinite;
+}
+
+#workspaces button.visible {
+    background: @color14;
+    color: @background;
+    box-shadow: inset 0px 0px 3px @color15;
+}
+
+#workspaces button.visible:hover {
+    background: @color3;
+    color: @background;
+    box-shadow: inset 0px 0px 3px @color14;
+}
+
+/* Urgent animation */
+@keyframes urgent-pulse {
+    0% {
+        background: @color12;
+    }
+
+    50% {
+        background: @color13;
+    }
+
+    100% {
+        background: @color12;
+    }
+}

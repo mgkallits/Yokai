@@ -1,0 +1,19 @@
+{
+//  ╭─ NETWORK MODULE ──────────────────────────╮
+//  │    Wifi Signal Stregnth & Current Speed  │
+//  ╰───────────────────────────────────────────╯
+
+    "network": {
+        // "format-wifi": "Wifi {signalStrength}%",
+        "format-wifi": "{signalStrength}% \u200A\u200A\u200A\u202F",
+        "format-ethernet": "Ethernet 󰈁",
+        "format-disconnected": "Disconnected",
+        "tooltip-format-wifi": "Interface {ifname}: {ipaddr}/{cidr}\n Connected to: {essid}",
+        "tooltip-format-ethernet": "",
+        "tooltip-format-disconnected": "",
+        "max-length": 50,
+        // "format-icons": ["󰤯", "󰤟", "󰤢", "󰤥", "󰤨"],
+        "format-alt": " {bandwidthDownBytes}  {bandwidthUpBytes}",
+        "on-click-middle": "pkill nm-applet && nm-applet"
+    }
+}

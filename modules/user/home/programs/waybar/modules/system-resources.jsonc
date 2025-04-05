@@ -1,0 +1,77 @@
+{
+    //  ╭─ SYSTEM RESOURCES MODULES─────────╮
+    //  │    Power Profiles Module         │
+    //  │    Resources Group               │
+    //  │      Temperature                 │
+    //  │      CPU Load                    │
+    //  │      RAM Usage                   │
+    //  ╰───────────────────────────────────╯
+    "power-profiles-daemon": {
+        "format": "{icon}\u202F\u200A",
+        "tooltip-format": "Power profile: {profile}\nDriver: {driver}",
+        "tooltip": true,
+        "format-icons": {
+            // "default": "",
+            // "performance": "",
+            "balanced": "",
+            "power-saver": ""
+        }
+    },
+    "group/resources": {
+        "orientation": "inherit",
+        "drawer": {
+            "transition-duration": 500,
+            "children-class": "resources-children",
+            "transition-left-to-right": false,
+            "click-to-reveal": false
+        },
+        "modules": [
+            "custom/resources-info", // First element is the "group leader" and won't ever be hidden
+            "temperature",
+            "custom/sep",
+            "cpu",
+            "custom/sep",
+            "memory"
+        ],
+        "background": "@color0",
+        "padding": "2px 6px",
+        "margin": "2px",
+        "border-radius": "5px"
+    },
+    "custom/resources-info": {
+        "format": "\u202F\u200A\u202F\u200A\u200A",
+        "icon": "",
+        "exec": "~/.config/waybar/scripts/uptime.sh",
+        "return-type": "json", // Now valid since script outputs JSON
+        "tooltip": true
+    },
+    "temperature": {
+        // "format": "\u202F{temperatureC}°C \u202F\u200A",
+        "hwmon-path": "/sys/class/hwmon/hwmon2/temp1_input",
+        "critical-threshold": 93,
+        "format-critical": "{temperatureC}°C  ",
+        "format": "\u202F{temperatureC}°C {icon}\u202F\u200A",
+        "format-icons": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ]
+    },
+    "cpu": {
+        "format": "\u202F{usage}% \u202F\u202F" // Pipe with spaces
+    },
+    "memory": {
+        "format": "\u202F{}% \u202F\u202F\u200A" // Pipe with spaces
+    },
+    "custom/sep": {
+        "format": "|",
+        "interval": "once",
+        "tooltip": false
+    }
+}

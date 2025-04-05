@@ -1,0 +1,42 @@
+{
+//  ╭─ LAPTOP SPECIFIC MODULES ─────────╮
+//  │     Laptop Battery Group         │
+//  │       Battery Inicator           │
+//  │       Power Profile Switcher     │
+//  │       Keyboard                   │
+//  ╰───────────────────────────────────╯
+
+    "group/laptop-bat": {
+        "orientation": "horizontal",
+        "drawer": {
+            "orientation": "horizontal",
+            "children-class": "power-drawer",
+            "transition-duration": 200,
+            "position": "right"  // Makes drawer appear to the right
+        },
+        "modules": [
+            "battery",
+            "power-profiles-daemon"
+        ],
+        "on-click-right": "group-power.toggle-drawer",
+        "on-click-middle": "group-power.toggle",
+        "persistent-drawer": false
+    },
+
+    "battery": {
+        "interval": 3,
+        "states": {
+            "warning": 25,
+            "critical": 15
+        },
+        "format": "{capacity}% <span font-size='13.7pt'>{icon}</span>\u202F\u200A\u200A\u200A",
+        "format-charging": "{capacity}% <span font-size='13.5pt'>{icon}</span>\u202F\u202F<span font-size='13.5pt'>󱐋</span>\u200A", // or use the nf-md variant 󱐋  ()
+        "format-full": "{capacity}% {icon}\u202F\u202F󰄬\u200A", // or use the nf-md variant 󰄬  ()
+
+        "format-alt": "{time} {icon}\u202F\u200A\u200A",
+
+        "format-icons": ["", "", "", "", ""],
+        "max-length": 25,
+        "tooltip": false
+    }
+}  

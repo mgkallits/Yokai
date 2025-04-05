@@ -1,0 +1,21 @@
+{
+    //  ╭─ POWER ACTIONS MODULE ────────────╮
+    //  │    Actions                       │
+    //  │      Shutdown                    │
+    //  │      Reboot                      │
+    //  │      Suspend                     │
+    //  ╰───────────────────────────────────╯
+    // TODO: change to hypr one for managing auto suspend also etc.
+    // This is to be change
+    "custom/actions": {
+        "format": "\u200A\u200A\u200A\u200A\u200A\u200A\u200A\u200A\u200A",
+        "tooltip": false,
+        "menu": "on-click",
+        "menu-file": "$HOME/.config/waybar/power_menu.xml", // Menu file in resources folder
+        "menu-actions": {
+            "shutdown": "shutdown",
+            "reboot": "reboot",
+            "suspend": "systemctl suspend"
+        }
+    }
+}

@@ -1,0 +1,63 @@
+/*
+╭───────────────────────╮
+│                       │
+│    GENERAL MODULES    │
+│                       │
+╰───────────────────────╯
+*/
+
+/* Base Module Styles */
+#window,
+#gamemode,
+#idle_inhibitor,
+#language,
+#submap,
+#workspaces,
+#power-profiles-daemon,
+#backlight,
+#battery,
+#wireplumber,
+#custom-media,
+#systemd-failed-units,
+#network,
+#clock,
+#tray,
+#custom-actions {
+    background: @color0;
+    color: @foreground;
+    padding: 2px 8px;
+    margin: 2px;
+    border-radius: 5px;
+    transition: background 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+/* Module Hover Effects */
+#window:hover,
+#gamemode:hover,
+#idle_inhibitor:hover,
+#language:hover,
+#submap:hover,
+#workspaces:hover,
+#systemd-failed-units:hover,
+#power-profiles-daemon:hover,
+#backlight:hover,
+#battery:hover,
+#wireplumber:hover,
+#network:hover,
+#clock:hover,
+#tray:hover,
+#custom-actions:hover {
+    background: @color3;
+    color: @background;
+    /* box-shadow: 0px 0px 4px @color3; */
+}
+
+/* Hide empty window module */
+window#waybar.empty #window {
+    background-color: transparent;
+    color: transparent;
+    padding: 0;
+    margin: 0;
+    border: none;
+    box-shadow: none;
+}

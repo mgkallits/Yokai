@@ -1,0 +1,58 @@
+/*
+╭──────────────────────────────╮
+│                              │
+│    SYSTEM RESOURCES GROUP    │
+│                              │
+╰──────────────────────────────╯
+*/
+
+/* Group Container */
+#resources {
+    background: @color0;
+    color: @foreground;
+    padding: 2px 2px;
+    margin: 2px;
+    border-radius: 5px;
+    transition: background 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+/* Group Hover */
+#resources:hover {
+    background: @background;
+    /* color: @color3; */
+    /* box-shadow: 0px 0px 4px @background; */
+}
+
+/* Individual Resource Modules */
+#resources #custom-resources-info,
+#resources #cpu,
+#resources #memory,
+#resources #temperature {
+    background: @color0;
+    color: @foreground;
+    padding: 2px 4px;
+    margin: 2px;
+    border-radius: 5px;
+    transition: background 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+/* Individual Hover Effects */
+#resources #custom-resources-info:hover,
+#resources #cpu:hover,
+#resources #memory:hover,
+#resources #temperature:hover {
+    background: @color3;
+    color: @background;
+    /* box-shadow: inset 0px 0px 6px @color15; */
+}
+
+#custom-sep {
+    color: @color3;
+    padding: 2px 0px;
+    margin: 0;
+    font-weight: bold;
+}
+
+#resources:hover #custom-sep {
+    color: @color3;
+}

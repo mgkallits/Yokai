@@ -1,0 +1,56 @@
+{
+    //  ╭─ HYPRLAND MODULES ────────────────╮
+    //  │    Workspaces                    │
+    //  │    Window Title                  │
+    //  │    Keyboard                      │
+    //  │      Info - Submap Bindins       │
+    //  │      Language                    │
+    //  │      Current submap              │
+    //  ╰───────────────────────────────────╯
+    "hyprland/workspaces": {
+        "show-special": true
+    },
+    "hyprland/window": {
+        "format": "{}",
+        "max-length": 50,
+        "rewrite": {
+            "(.*)\\s-\\sBrave": " $1",
+            "(.*)\\s(.*)\\sDoom\\sEmacs": " -> 󰱯 $1",
+            "DeepSeek\\s-\\s(.*)": "<span font-size='13pt'>󱢴</span> $1",
+            "(.*)\\s-\\sVisual\\sStudio\\sCode": "\u200A\u200A<span font-size='13.5pt'></span>\u202F\u200A $1",
+            "(.*)foot": "\u202F\u202F -> <span font-size='13.8pt'>󰽒</span>$1",
+            "Wofi\\sdrun": "\u202F"
+        },
+        "separate-outputs": true
+    },
+    "group/hyprkeyboard": {
+        "orientation": "inherit",
+        "modules": [
+            "custom/bindings-info",
+            "hyprland/language",
+            "hyprland/submap"
+        ],
+        "background": "@color0",
+        "padding": "2px 6px",
+        "margin": "2px",
+        "border-radius": "5px",
+        "max-length": 40
+    },
+    "custom/bindings-info": {
+        "format": "\u202F\u202F\u200A",
+        "icon": "",
+        "tooltip": true
+    },
+    "hyprland/language": {
+        "format": "{}",
+        "format-en": "eng",
+        "format-gr": "gr"
+    },
+    "hyprland/submap": {
+        "format": "&lt;{}&gt;",
+        "default-submap": "*",
+        "always-on": true,
+        "max-length": 30,
+        "tooltip": false
+    }
+}

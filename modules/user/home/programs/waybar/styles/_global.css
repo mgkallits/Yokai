@@ -1,0 +1,23 @@
+/*
+╭───────────────────────╮
+│                       │
+│    GLOBAL SETTINGS    │
+│                       │
+╰───────────────────────╯
+*/
+
+* {
+    font-family: "JetBrainsMono Nerd Font";
+    /* font-weight: bolder; */
+    font-size: 15px;
+    min-height: 0;
+    border: none;
+}
+
+window#waybar {
+    /* background: @background; */
+    background-color: transparent;
+    color: @foreground;
+    /* border-bottom: 2px solid @color1; */
+    padding: 8px;
+}

@@ -1,0 +1,48 @@
+/*
+╭───────────────────────────╮
+│                           │
+│    HYPRKEYBORARD GROUP    │
+│                           │
+╰───────────────────────────╯
+*/
+
+/* Main Group Container */
+#hyprkeyboard {
+    background: @color0;
+    color: @foreground;
+    padding: 2px 2px;
+    margin: 2px;
+    border-radius: 5px;
+    transition: background 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+/* Group Hover State */
+#hyprkeyboard:hover {
+    background: @background;
+    /* color: @color3; */
+    /* box-shadow: 0px 0px 4px @background; */
+}
+
+
+/* Group Modules */
+#hyprkeyboard #custom-bindings-info,
+#hyprkeyboard #language,
+#hyprkeyboard #submap {
+    background: @color0;
+    color: @foreground;
+    padding: 2px 4px;
+    margin: 2px;
+    border-radius: 5px;
+    transition: background 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+/* Module Hover States */
+#hyprkeyboard #custom-bindings-info:hover,
+#hyprkeyboard #language:hover,
+#hyprkeyboard #submap:hover {
+    background: @color3;
+    color: @background;
+    /* box-shadow: inset 0px 0px 6px @color15; */
+    /* background: @color14;
+    box-shadow: inset 0px 0px 2px @color15; */
+}
