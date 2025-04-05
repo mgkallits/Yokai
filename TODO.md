@@ -8,3 +8,14 @@ add settings to user defined system settings ?
 
 
 - Add mulltiple user deffinitions in the settings.nix, or in the custom-options create username to create a list of usernames (how would that work?).
+
+- Change the hyprland border color script to use the color14
+- add the waybar config to the .dotfiles
+- add all symlinks to dotfiles
+- make different boot config for hosts
+- make hyprland & waybar config for hosts
+- add hyprlock -> i want to have all the power options for hyprland and a lockscreen
+
+- chnge mic script with the wpctl get-volume @DEFAULT_AUDIO_SOURCE@ | grep -q "MUTED" && echo "Mic is muted" || echo "Mic is unmuted" command
+
+- pin the hyprswitch version...
