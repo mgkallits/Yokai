@@ -9,7 +9,7 @@
 
 {
   config = lib.mkIf (hostname == "tanuki") {
-    boot.kernelParams = [ "snd_hda_intel.power_save=0" ];
+    # boot.kernelParams = [ "snd_hda_intel.power_save=0" ];
 
     # sound.enable = true;
     services.pipewire = {
@@ -20,21 +20,21 @@
       wireplumber = {
         enable = true; # Enable WirePlumber for PipeWire session management
 
-        configPackages = [
-          (pkgs.writeTextDir "share/wireplumber/main.lua.d/99-mic-timeout.lua" ''
-            -- Close microphone streams after 5 seconds of inactivity
-            alsa_monitor.rules = {
-              {
-                matches = {
-                  { "node.name", "matches", "alsa_input.*" },
-                };
-                apply_properties = {
-                  ["session.suspend-timeout-seconds"] = 5, -- Close after 5 seconds of inactivity
-                },
-              },
-            }
-          '')
-        ];
+        # configPackages = [
+        #   (pkgs.writeTextDir "share/wireplumber/main.lua.d/99-mic-timeout.lua" ''
+        #     -- Close microphone streams after 5 seconds of inactivity
+        #     alsa_monitor.rules = {
+        #       {
+        #         matches = {
+        #           { "node.name", "matches", "alsa_input.*" },
+        #         };
+        #         apply_properties = {
+        #           ["session.suspend-timeout-seconds"] = 5, -- Close after 5 seconds of inactivity
+        #         },
+        #       },
+        #     }
+        #   '')
+        # ];
         #       configPackages = [
         #         (pkgs.writeTextDir "share/wireplumber/main.lua.d/99-disable-auto-switch.lua" ''
         #           -- Disable automatic switching to newly connected devices
