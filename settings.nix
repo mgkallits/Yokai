@@ -22,8 +22,15 @@
   gitUsername = "mgkallits";
   gitEmail = "mgkallits@gmail.com";
   display-manager = ""; # one of: "gdm", "" -> no display-manager meaning you have to log in using tty or a script
+  bleeding-edge = false; # whether to enable hyprland and other programs latest features by getting the packages staight from github instead of nixpkgs.
+  mount-external-drives = false; # wehther to mound my external hard drives.
+  secure-boot = false; # wether to enable/disable secure boot with lanzaboote.
+  doomemacs = true; # whether to enable doom-emacs.
+  hyprswitch = true; # whether to enable hyprswitch.
 
-  # System state version IMPORTANT! Do not change after initial setup (or else? ++)
-  version = "24.05";
- 
+
+
+  # WARNING: System state version CAUTION! Do not change after initial setup (or else? TODO: improve this)
+  version = "24.11";
+
 }
