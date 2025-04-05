@@ -128,7 +128,6 @@
 
     pkgs.stress-ng
 
-    pkgs.brave
 
     pkgs.imagemagick
 
@@ -164,19 +163,52 @@
 
     pkgs.zathura
 
-    pkgs.xclip
+    pkgs.brave
 
-    pkgs.zoxide
+    # Other packages...
+    (pkgs.writeShellScriptBin "bitwarden" ''
+      exec ${pkgs.appimage-run}/bin/appimage-run ~/.local/bin/bitwarden
+    '')
+    # NOTE: I moved the appimage to the .local/bin:
+    # `mv ~/Downloads/Bitwarden-2025.2.1-x86_64.AppImage ~/.local/bin/bitwarden`
 
-    pkgs.fastfetch
+    pkgs.R
 
-    pkgs.obs-studio
+    (pkgs.rWrapper.override {
+      packages = with pkgs.rPackages;
+        # let
+        #   llr = buildRPackage {
+        #   name = "llr";
+        #   src = pkgs.fetchFromGitHub {
+        #     owner = "dirkschumacher";
+        #     repo = "llr";
+        #     rev = "0a654d469af231e9017e1100f00df47bae212b2c";
+        #     sha256 = "0ks96m35z73nf2sb1cb8d7dv8hq8dcmxxhc61dnllrwxqq9m36lr";
+        #   };
+        #   propagatedBuildInputs = [ rlang  knitr];
+        #   nativeBuildInputs = [ rlang knitr ];};
+        # in 
+        [  
+          # knitr
+          # rlang
+          # llr
+          tidyverse
+          ## the rest of your R packages here
+          devtools
+          ggplot2
+        ];
+      }
+    )
 
-    pkgs.spotify
-  ];
+  ];  
+  
+# programs.gnupg.agent = {
+#   enable = true;
+#   enableSSHSupport = true;
+# };
 
-  programs.nm-applet.enable = true;
-  programs.nm-applet.indicator = true;
+
+
 
 # ----
   # services.displayManager.enable = lib.mkForce false;
