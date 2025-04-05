@@ -1,12 +1,6 @@
 { config, pkgs, ... }:
 
 {
-
-  # imports = [
-  #   ./zoxide.nix
-  # ];
-
-
   programs.direnv = {
     enable = true;
     loadInNixShell = true;
