@@ -1,5 +1,5 @@
-{ config, pkgs, ... }:
+{ config, pkgs, lib, ... }:
 
 {
-  services.hyprpaper.enable = false;
+  services.hyprpaper.enable = lib.mkForce false;
 }
