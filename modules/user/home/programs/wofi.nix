@@ -3,8 +3,6 @@
 {
   programs.wofi.enable = true;
 
-  stylix.targets.wofi.enable = false;
-
   programs.wofi.settings = {
     location = "center";
     insensitive = true;
@@ -13,7 +11,7 @@
   };
 
   programs.wofi.style = ''
-    @import "colors-waybar.css";
+    @import "wofi-colors.css";
 
     /* 🔹 Window */
     #window {
@@ -81,5 +79,10 @@
         margin-left: 5px;
     }
   '';
+
+  home.file.".config/wofi/wofi-colors.css".source =
+    config.lib.file.mkOutOfStoreSymlink "${config.xdg.cacheHome}/wal/colors-waybar.css";
+
+  stylix.targets.wofi.enable = false;
 
 }
