@@ -3,6 +3,10 @@
 {
   environment.systemPackages = with pkgs; [
 
+    pkgs.libsmbios
+
+    pkgs.brightnessctl
+    
     (octaveFull.withPackages (opkgs: with opkgs; [ statistics ]))
 
     pspp
@@ -41,7 +45,7 @@
     # My packages
     # vim wget killall openssl
     # brave thunderbird vlc neofetch
-    # alacritty yazi neovim zathura apacheHttpd htop dig zoxide
+    # alacritty yazi  zathura apacheHttpd htop dig zoxide
     # grsync nextcloud-client python312Packages.pywal
     # pywal
     pywal16
@@ -58,9 +62,7 @@
     killall
     zip
     unzip
-    # bluez
     # busybox
-    # bluez-tools
     # brightnessctl
     # light
     # xdg-utils
@@ -116,7 +118,6 @@
 
     # where-is-my-sddm-theme
     # firefox
-    # blueman
     # trash-cli
     # ydotool
     # lsd
@@ -163,15 +164,15 @@
     # grimblast
 
     #   #### Core Packages
-    #   lld gcc glibc clang udev llvmPackages.bintools
-    #   wget procps killall zip unzip bluez busybox
+    #   lld gcc glibc clang udev 
+    #   wget procps killall zip unzip z busybox
     #   brightnessctl light xdg-utils
     #   pkg-config
     #   kdePackages.qtsvg usbutils lxqt.lxqt-policykit
 
     #   #### Standard Packages
     #       sox yad 
-    #   ffmpeg neovim
+    #   ffmpeg 
 
     #   #### GTK
     #   gtk2 gtk3 gtk4 tela-circle-icon-theme
@@ -197,7 +198,7 @@
     #   eww
     #   inputs.hyprwm-contrib.packages.${system}.grimblast
     #   where-is-my-sddm-theme firefox brave
-    #    blueman trash-cli ydotool
+    #   trash-cli ydotool
     #   lsd parallel pwvucontrol pamixer udiskie dunst swaylock-effects
     #   wlogout hyprpicker slurp swappylibinput-gestures
     #   jq kdePackages.qtimageformats
