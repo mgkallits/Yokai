@@ -1,6 +1,7 @@
 {
   config,
   pkgs,
+  stpkgs,
   inputs,
   ylib,
   username,
@@ -45,13 +46,7 @@
       "realtime"
     ];
     packages = with pkgs; [
-      bitwarden-desktop
-      feh
-      kitty
-      # dmenu
-      # slstatus
-      # xsettingsd
-      # xorg.xrdb
+      feh kitty
     ];
   };
 

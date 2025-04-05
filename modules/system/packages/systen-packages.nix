@@ -3,6 +3,10 @@
 {
   environment.systemPackages = with pkgs; [
 
+    (octaveFull.withPackages (opkgs: with opkgs; [ statistics ]))
+
+    pspp
+
     git
     fzf
     tldr
@@ -36,7 +40,7 @@
 
     # My packages
     # vim wget killall openssl
-    # brave bitwarden thunderbird vlc neofetch
+    # brave thunderbird vlc neofetch
     # alacritty yazi neovim zathura apacheHttpd htop dig zoxide
     # grsync nextcloud-client python312Packages.pywal
     # pywal
@@ -151,7 +155,6 @@
     # gnumake
 
     #
-    # openssh
     #
     #
     # gnumake
