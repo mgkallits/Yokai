@@ -20,7 +20,11 @@
     zsh
     bash
   ];
+
+  programs.dconf.enable = true;
+  security.sudo.wheelNeedsPassword = true;
   environment.localBinInPath = true;
+
   users.defaultUserShell = pkgs.zsh;
 
   users.users.${username} = {

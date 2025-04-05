@@ -46,7 +46,7 @@
       "realtime"
     ];
     packages = with pkgs; [
-      feh kitty
+      feh kitty spotify
     ];
   };
 
@@ -54,7 +54,7 @@
 
   powerManagement = {
     enable = true;
-    cpuFreqGovernor = "performance";
+    cpuFreqGovernor = "ondemand";
   };
 
   services = {
