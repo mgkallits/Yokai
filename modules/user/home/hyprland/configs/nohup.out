@@ -1,0 +1,367 @@
+[2m   0.000176144s[0m [32m INFO[0m Starting Hyprswitch (3.3.2) on Hyprland 0.47.2
+[2m   0.000241648s[0m [32m INFO[0m Starting daemon
+[2m   0.000628432s[0m [32m INFO[0m Starting listener on "/run/user/1000/hyprswitch.sock"
+[2m   0.005724955s[0m [32m INFO[0m Running application
+[2m   0.008941143s[0m [31mERROR[0m Application exited
+[2m   0.012645667s[0m [32m INFO[0m Running application
+Failed to register: GDBus.Error:org.freedesktop.DBus.Error.NoReply: Remote peer disconnected
+[2m   0.485477415s[0m [31mERROR[0m Application exited
+[2m   0.489255499s[0m [32m INFO[0m Running application
+[2m   0.583850487s[0m [32m INFO[0m Using theme: Some("adw-gtk3") and icon theme: Some("Adwaita"), please make sure both exist, else weird icon or graphical issues may occur
+[2m   6.461125777s[0m [32m INFO[0m Received init command SimpleConfig { ignore_monitors: false, ignore_workspaces: false, sort_recent: true, filter_current_workspace: false, filter_current_monitor: false, filter_same_class: false, include_special_workspaces: false, switch_type: Client } and GuiConfig { max_switch_offset: 0, hide_active_window_border: false, monitors: None, show_workspaces_on_all_monitors: false, show_launcher: false } and Config { mod_key: SuperL, key: "tab", close: ModKeyRelease, reverse_key: Mod(ShiftL) }
+[2m   6.632269806s[0m [32m INFO[0m Received close command with kill: false
+[2m   7.152412749s[0m [32m INFO[0m Received init command SimpleConfig { ignore_monitors: false, ignore_workspaces: false, sort_recent: true, filter_current_workspace: false, filter_current_monitor: false, filter_same_class: false, include_special_workspaces: false, switch_type: Client } and GuiConfig { max_switch_offset: 0, hide_active_window_border: false, monitors: None, show_workspaces_on_all_monitors: false, show_launcher: false } and Config { mod_key: SuperL, key: "tab", close: ModKeyRelease, reverse_key: Mod(ShiftL) }
+[2m   7.194150406s[0m [32m INFO[0m Received switch command DispatchConfig { reverse: false, offset: 1 }
+[2m   7.194205380s[0m [32m INFO[0m Next client: Address("0x5a3c330")
+[2m   7.835983480s[0m [32m INFO[0m Received close command with kill: false
+[2m  11.775451755s[0m [32m INFO[0m Received init command SimpleConfig { ignore_monitors: false, ignore_workspaces: false, sort_recent: true, filter_current_workspace: false, filter_current_monitor: false, filter_same_class: false, include_special_workspaces: false, switch_type: Client } and GuiConfig { max_switch_offset: 0, hide_active_window_border: false, monitors: None, show_workspaces_on_all_monitors: false, show_launcher: false } and Config { mod_key: SuperL, key: "tab", close: ModKeyRelease, reverse_key: Mod(ShiftL) }
+[2m  11.816845360s[0m [32m INFO[0m Received switch command DispatchConfig { reverse: false, offset: 1 }
+[2m  11.816895265s[0m [32m INFO[0m Next client: Address("0x5111d80")
+[2m  12.387956530s[0m [32m INFO[0m Received close command with kill: false
+[2m  12.846212811s[0m [32m INFO[0m Received init command SimpleConfig { ignore_monitors: false, ignore_workspaces: false, sort_recent: true, filter_current_workspace: false, filter_current_monitor: false, filter_same_class: false, include_special_workspaces: false, switch_type: Client } and GuiConfig { max_switch_offset: 0, hide_active_window_border: false, monitors: None, show_workspaces_on_all_monitors: false, show_launcher: false } and Config { mod_key: SuperL, key: "tab", close: ModKeyRelease, reverse_key: Mod(ShiftL) }
+[2m  12.902057696s[0m [32m INFO[0m Received switch command DispatchConfig { reverse: false, offset: 1 }
+[2m  12.902132037s[0m [32m INFO[0m Next client: Address("0x5a3c330")
+[2m  12.925984322s[0m [32m INFO[0m Received close command with kill: false
+[2m  13.560432524s[0m [32m INFO[0m Received init command SimpleConfig { ignore_monitors: false, ignore_workspaces: false, sort_recent: true, filter_current_workspace: false, filter_current_monitor: false, filter_same_class: false, include_special_workspaces: false, switch_type: Client } and GuiConfig { max_switch_offset: 0, hide_active_window_border: false, monitors: None, show_workspaces_on_all_monitors: false, show_launcher: false } and Config { mod_key: SuperL, key: "tab", close: ModKeyRelease, reverse_key: Mod(ShiftL) }
+[2m  13.600167955s[0m [32m INFO[0m Received switch command DispatchConfig { reverse: false, offset: 1 }
+[2m  13.600216216s[0m [32m INFO[0m Next client: Address("0x5111d80")
+[2m  13.657657799s[0m [32m INFO[0m Received close command with kill: false
+[2m  14.131565095s[0m [32m INFO[0m Received init command SimpleConfig { ignore_monitors: false, ignore_workspaces: false, sort_recent: true, filter_current_workspace: false, filter_current_monitor: false, filter_same_class: false, include_special_workspaces: false, switch_type: Client } and GuiConfig { max_switch_offset: 0, hide_active_window_border: false, monitors: None, show_workspaces_on_all_monitors: false, show_launcher: false } and Config { mod_key: SuperL, key: "tab", close: ModKeyRelease, reverse_key: Mod(ShiftL) }
+[2m  14.188481903s[0m [32m INFO[0m Received switch command DispatchConfig { reverse: false, offset: 1 }
+[2m  14.188532068s[0m [32m INFO[0m Next client: Address("0x5a3c330")
+[2m  14.212904068s[0m [32m INFO[0m Received close command with kill: false
+[2m2941.010778105s[0m [32m INFO[0m Received init command SimpleConfig { ignore_monitors: false, ignore_workspaces: false, sort_recent: true, filter_current_workspace: false, filter_current_monitor: false, filter_same_class: false, include_special_workspaces: false, switch_type: Client } and GuiConfig { max_switch_offset: 0, hide_active_window_border: false, monitors: None, show_workspaces_on_all_monitors: false, show_launcher: false } and Config { mod_key: SuperL, key: "tab", close: ModKeyRelease, reverse_key: Mod(ShiftL) }
+[2m2941.063367415s[0m [32m INFO[0m Received switch command DispatchConfig { reverse: false, offset: 1 }
+[2m2941.063433380s[0m [32m INFO[0m Next client: Address("0x4a08e00")
+[2m2941.147412890s[0m [32m INFO[0m Received close command with kill: false
+[2m3190.504434949s[0m [32m INFO[0m Received init command SimpleConfig { ignore_monitors: false, ignore_workspaces: false, sort_recent: true, filter_current_workspace: false, filter_current_monitor: false, filter_same_class: false, include_special_workspaces: false, switch_type: Client } and GuiConfig { max_switch_offset: 0, hide_active_window_border: false, monitors: None, show_workspaces_on_all_monitors: false, show_launcher: false } and Config { mod_key: SuperL, key: "tab", close: ModKeyRelease, reverse_key: Mod(ShiftL) }
+[2m3190.557518740s[0m [32m INFO[0m Received switch command DispatchConfig { reverse: false, offset: 1 }
+[2m3190.557583843s[0m [32m INFO[0m Next client: Address("0x4ba4b80")
+[2m3196.252064954s[0m [32m INFO[0m Received close command with kill: false
+[2m3197.269634297s[0m [32m INFO[0m Received init command SimpleConfig { ignore_monitors: false, ignore_workspaces: false, sort_recent: true, filter_current_workspace: false, filter_current_monitor: false, filter_same_class: false, include_special_workspaces: false, switch_type: Client } and GuiConfig { max_switch_offset: 0, hide_active_window_border: false, monitors: None, show_workspaces_on_all_monitors: false, show_launcher: false } and Config { mod_key: SuperL, key: "tab", close: ModKeyRelease, reverse_key: Mod(ShiftL) }
+[2m3197.323683487s[0m [32m INFO[0m Received switch command DispatchConfig { reverse: false, offset: 1 }
+[2m3197.323753349s[0m [32m INFO[0m Next client: Address("0x5a3c330")
+[2m3199.022992310s[0m [32m INFO[0m Switching to client Address("0x4a08e00")
+[2m3199.023066290s[0m [32m INFO[0m Exiting on click of client window
+
+(hyprswitch:295525): Gtk-WARNING **: 19:28:04.512: Broken accounting of active state for widget 0x7fbe4c13d2f0(GtkApplicationWindow)
+[2m3206.774972063s[0m [32m INFO[0m Received init command SimpleConfig { ignore_monitors: false, ignore_workspaces: false, sort_recent: true, filter_current_workspace: false, filter_current_monitor: false, filter_same_class: false, include_special_workspaces: false, switch_type: Client } and GuiConfig { max_switch_offset: 0, hide_active_window_border: false, monitors: None, show_workspaces_on_all_monitors: false, show_launcher: false } and Config { mod_key: SuperL, key: "tab", close: ModKeyRelease, reverse_key: Mod(ShiftL) }
+[2m3206.828354580s[0m [32m INFO[0m Received switch command DispatchConfig { reverse: false, offset: 1 }
+[2m3206.828415846s[0m [32m INFO[0m Next client: Address("0x4bad240")
+[2m3207.770118249s[0m [32m INFO[0m Received switch command DispatchConfig { reverse: false, offset: 1 }
+[2m3207.770189214s[0m [32m INFO[0m Next client: Address("0x5a3c330")
+[2m3209.573758072s[0m [32m INFO[0m Received close command with kill: false
+[2m6703.612306453s[0m [32m INFO[0m Received init command SimpleConfig { ignore_monitors: false, ignore_workspaces: false, sort_recent: true, filter_current_workspace: false, filter_current_monitor: false, filter_same_class: false, include_special_workspaces: false, switch_type: Client } and GuiConfig { max_switch_offset: 0, hide_active_window_border: false, monitors: None, show_workspaces_on_all_monitors: false, show_launcher: false } and Config { mod_key: SuperL, key: "tab", close: ModKeyRelease, reverse_key: Mod(ShiftL) }
+[2m6703.669931967s[0m [32m INFO[0m Received switch command DispatchConfig { reverse: false, offset: 1 }
+[2m6703.670018942s[0m [32m INFO[0m Next client: Address("0x4bad240")
+[2m6704.817051546s[0m [32m INFO[0m Received close command with kill: false
+[2m6705.493196297s[0m [32m INFO[0m Received init command SimpleConfig { ignore_monitors: false, ignore_workspaces: false, sort_recent: true, filter_current_workspace: false, filter_current_monitor: false, filter_same_class: false, include_special_workspaces: false, switch_type: Client } and GuiConfig { max_switch_offset: 0, hide_active_window_border: false, monitors: None, show_workspaces_on_all_monitors: false, show_launcher: false } and Config { mod_key: SuperL, key: "tab", close: ModKeyRelease, reverse_key: Mod(ShiftL) }
+[2m6705.546414069s[0m [32m INFO[0m Received switch command DispatchConfig { reverse: false, offset: 1 }
+[2m6705.546476016s[0m [32m INFO[0m Next client: Address("0x4a08e00")
+[2m6706.245676454s[0m [32m INFO[0m Received switch command DispatchConfig { reverse: false, offset: 1 }
+[2m6706.245788286s[0m [32m INFO[0m Next client: Address("0x4ba4b80")
+[2m6706.456384864s[0m [32m INFO[0m Received switch command DispatchConfig { reverse: false, offset: 1 }
+[2m6706.456443956s[0m [32m INFO[0m Next client: Address("0x4bdf350")
+[2m6708.243780571s[0m [32m INFO[0m Received close command with kill: false
+[2m6955.664241876s[0m [32m INFO[0m Received init command SimpleConfig { ignore_monitors: false, ignore_workspaces: false, sort_recent: true, filter_current_workspace: false, filter_current_monitor: false, filter_same_class: false, include_special_workspaces: false, switch_type: Client } and GuiConfig { max_switch_offset: 0, hide_active_window_border: false, monitors: None, show_workspaces_on_all_monitors: false, show_launcher: false } and Config { mod_key: SuperL, key: "tab", close: ModKeyRelease, reverse_key: Mod(ShiftL) }
+[2m6955.721935828s[0m [32m INFO[0m Received switch command DispatchConfig { reverse: false, offset: 1 }
+[2m6955.722013044s[0m [32m INFO[0m Next client: Address("0x4b9ead0")
+[2m6958.716615413s[0m [32m INFO[0m Received switch command DispatchConfig { reverse: false, offset: 1 }
+[2m6958.716699413s[0m [32m INFO[0m Next client: Address("0x4ba4b80")
+[2m6958.752531363s[0m [32m INFO[0m Received close command with kill: false
+[2m6959.544527918s[0m [32m INFO[0m Received init command SimpleConfig { ignore_monitors: false, ignore_workspaces: false, sort_recent: true, filter_current_workspace: false, filter_current_monitor: false, filter_same_class: false, include_special_workspaces: false, switch_type: Client } and GuiConfig { max_switch_offset: 0, hide_active_window_border: false, monitors: None, show_workspaces_on_all_monitors: false, show_launcher: false } and Config { mod_key: SuperL, key: "tab", close: ModKeyRelease, reverse_key: Mod(ShiftL) }
+[2m6959.600410769s[0m [32m INFO[0m Received switch command DispatchConfig { reverse: false, offset: 1 }
+[2m6959.600520527s[0m [32m INFO[0m Next client: Address("0x5a3c330")
+[2m6959.634342870s[0m [32m INFO[0m Received close command with kill: false
+[2m6960.267112901s[0m [32m INFO[0m Received init command SimpleConfig { ignore_monitors: false, ignore_workspaces: false, sort_recent: true, filter_current_workspace: false, filter_current_monitor: false, filter_same_class: false, include_special_workspaces: false, switch_type: Client } and GuiConfig { max_switch_offset: 0, hide_active_window_border: false, monitors: None, show_workspaces_on_all_monitors: false, show_launcher: false } and Config { mod_key: SuperL, key: "tab", close: ModKeyRelease, reverse_key: Mod(ShiftL) }
+[2m6960.322637152s[0m [32m INFO[0m Received switch command DispatchConfig { reverse: false, offset: 1 }
+[2m6960.322688880s[0m [32m INFO[0m Next client: Address("0x4ba4b80")
+[2m6960.691601384s[0m [32m INFO[0m Received switch command DispatchConfig { reverse: false, offset: 1 }
+[2m6960.691669423s[0m [32m INFO[0m Next client: Address("0x4b9ead0")
+[2m6960.869183586s[0m [32m INFO[0m Received switch command DispatchConfig { reverse: false, offset: 1 }
+[2m6960.869241817s[0m [32m INFO[0m Next client: Address("0x4a08e00")
+[2m6964.422934405s[0m [32m INFO[0m Switching to client Address("0x4a08e00")
+[2m6964.423028273s[0m [32m INFO[0m Exiting on click of client window
+
+(hyprswitch:295525): Gtk-WARNING **: 20:30:49.914: Broken accounting of active state for widget 0x7fbe4c13d2f0(GtkApplicationWindow)
+[2m7205.959782250s[0m [32m INFO[0m Received init command SimpleConfig { ignore_monitors: false, ignore_workspaces: false, sort_recent: true, filter_current_workspace: false, filter_current_monitor: false, filter_same_class: false, include_special_workspaces: false, switch_type: Client } and GuiConfig { max_switch_offset: 0, hide_active_window_border: false, monitors: None, show_workspaces_on_all_monitors: false, show_launcher: false } and Config { mod_key: SuperL, key: "tab", close: ModKeyRelease, reverse_key: Mod(ShiftL) }
+[2m7206.012933468s[0m [32m INFO[0m Received switch command DispatchConfig { reverse: false, offset: 1 }
+[2m7206.013011025s[0m [32m INFO[0m Next client: Address("0x4bdf350")
+[2m7208.075337278s[0m [32m INFO[0m Received close command with kill: false
+[2m7208.920349449s[0m [32m INFO[0m Received init command SimpleConfig { ignore_monitors: false, ignore_workspaces: false, sort_recent: true, filter_current_workspace: false, filter_current_monitor: false, filter_same_class: false, include_special_workspaces: false, switch_type: Client } and GuiConfig { max_switch_offset: 0, hide_active_window_border: false, monitors: None, show_workspaces_on_all_monitors: false, show_launcher: false } and Config { mod_key: SuperL, key: "tab", close: ModKeyRelease, reverse_key: Mod(ShiftL) }
+[2m7208.977946079s[0m [32m INFO[0m Received switch command DispatchConfig { reverse: false, offset: 1 }
+[2m7208.978005933s[0m [32m INFO[0m Next client: Address("0x5a3c330")
+[2m7210.124109470s[0m [32m INFO[0m Received switch command DispatchConfig { reverse: false, offset: 1 }
+[2m7210.124173010s[0m [32m INFO[0m Next client: Address("0x4ba4b80")
+[2m7210.766180876s[0m [32m INFO[0m Received switch command DispatchConfig { reverse: false, offset: 1 }
+[2m7210.766241540s[0m [32m INFO[0m Next client: Address("0x4b9ead0")
+[2m7212.768171154s[0m [32m INFO[0m Received switch command DispatchConfig { reverse: false, offset: 1 }
+[2m7212.768237770s[0m [32m INFO[0m Next client: Address("0x4bad240")
+[2m7213.607970417s[0m [32m INFO[0m Received close command with kill: false
+[2m7272.865572088s[0m [32m INFO[0m Received init command SimpleConfig { ignore_monitors: false, ignore_workspaces: false, sort_recent: true, filter_current_workspace: false, filter_current_monitor: false, filter_same_class: false, include_special_workspaces: false, switch_type: Client } and GuiConfig { max_switch_offset: 0, hide_active_window_border: false, monitors: None, show_workspaces_on_all_monitors: false, show_launcher: false } and Config { mod_key: SuperL, key: "tab", close: ModKeyRelease, reverse_key: Mod(ShiftL) }
+[2m7272.921082374s[0m [32m INFO[0m Received switch command DispatchConfig { reverse: false, offset: 1 }
+[2m7272.921128952s[0m [32m INFO[0m Next client: Address("0x4bdf350")
+[2m7275.307712203s[0m [32m INFO[0m Received close command with kill: false
+[2m7276.342704879s[0m [32m INFO[0m Received init command SimpleConfig { ignore_monitors: false, ignore_workspaces: false, sort_recent: true, filter_current_workspace: false, filter_current_monitor: false, filter_same_class: false, include_special_workspaces: false, switch_type: Client } and GuiConfig { max_switch_offset: 0, hide_active_window_border: false, monitors: None, show_workspaces_on_all_monitors: false, show_launcher: false } and Config { mod_key: SuperL, key: "tab", close: ModKeyRelease, reverse_key: Mod(ShiftL) }
+[2m7276.397125251s[0m [32m INFO[0m Received switch command DispatchConfig { reverse: false, offset: 1 }
+[2m7276.397192849s[0m [32m INFO[0m Next client: Address("0x4bad240")
+[2m7278.836437015s[0m [32m INFO[0m Received close command with kill: false
+[2m7279.770623018s[0m [32m INFO[0m Received init command SimpleConfig { ignore_monitors: false, ignore_workspaces: false, sort_recent: true, filter_current_workspace: false, filter_current_monitor: false, filter_same_class: false, include_special_workspaces: false, switch_type: Client } and GuiConfig { max_switch_offset: 0, hide_active_window_border: false, monitors: None, show_workspaces_on_all_monitors: false, show_launcher: false } and Config { mod_key: SuperL, key: "tab", close: ModKeyRelease, reverse_key: Mod(ShiftL) }
+[2m7279.824359824s[0m [32m INFO[0m Received switch command DispatchConfig { reverse: false, offset: 1 }
+[2m7279.824473820s[0m [32m INFO[0m Next client: Address("0x4bdf350")
+[2m7280.191590758s[0m [32m INFO[0m Received close command with kill: false
+[2m7280.968541471s[0m [32m INFO[0m Received init command SimpleConfig { ignore_monitors: false, ignore_workspaces: false, sort_recent: true, filter_current_workspace: false, filter_current_monitor: false, filter_same_class: false, include_special_workspaces: false, switch_type: Client } and GuiConfig { max_switch_offset: 0, hide_active_window_border: false, monitors: None, show_workspaces_on_all_monitors: false, show_launcher: false } and Config { mod_key: SuperL, key: "tab", close: ModKeyRelease, reverse_key: Mod(ShiftL) }
+[2m7281.021360529s[0m [32m INFO[0m Received switch command DispatchConfig { reverse: false, offset: 1 }
+[2m7281.021429690s[0m [32m INFO[0m Next client: Address("0x4bad240")
+[2m7281.174885147s[0m [32m INFO[0m Received close command with kill: false
+[2m7282.060078621s[0m [32m INFO[0m Received init command SimpleConfig { ignore_monitors: false, ignore_workspaces: false, sort_recent: true, filter_current_workspace: false, filter_current_monitor: false, filter_same_class: false, include_special_workspaces: false, switch_type: Client } and GuiConfig { max_switch_offset: 0, hide_active_window_border: false, monitors: None, show_workspaces_on_all_monitors: false, show_launcher: false } and Config { mod_key: SuperL, key: "tab", close: ModKeyRelease, reverse_key: Mod(ShiftL) }
+[2m7282.112470740s[0m [32m INFO[0m Received switch command DispatchConfig { reverse: false, offset: 1 }
+[2m7282.112529601s[0m [32m INFO[0m Next client: Address("0x4bdf350")
+[2m7283.608067055s[0m [32m INFO[0m Received close command with kill: false
+[2m7284.243923719s[0m [32m INFO[0m Received init command SimpleConfig { ignore_monitors: false, ignore_workspaces: false, sort_recent: true, filter_current_workspace: false, filter_current_monitor: false, filter_same_class: false, include_special_workspaces: false, switch_type: Client } and GuiConfig { max_switch_offset: 0, hide_active_window_border: false, monitors: None, show_workspaces_on_all_monitors: false, show_launcher: false } and Config { mod_key: SuperL, key: "tab", close: ModKeyRelease, reverse_key: Mod(ShiftL) }
+[2m7284.305689597s[0m [32m INFO[0m Received switch command DispatchConfig { reverse: false, offset: 1 }
+[2m7284.305838289s[0m [32m INFO[0m Next client: Address("0x4bad240")
+[2m7284.338219396s[0m [32m INFO[0m Received close command with kill: false
+[2m7285.768218043s[0m [32m INFO[0m Received init command SimpleConfig { ignore_monitors: false, ignore_workspaces: false, sort_recent: true, filter_current_workspace: false, filter_current_monitor: false, filter_same_class: false, include_special_workspaces: false, switch_type: Client } and GuiConfig { max_switch_offset: 0, hide_active_window_border: false, monitors: None, show_workspaces_on_all_monitors: false, show_launcher: false } and Config { mod_key: SuperL, key: "tab", close: ModKeyRelease, reverse_key: Mod(ShiftL) }
+[2m7285.824104232s[0m [32m INFO[0m Received switch command DispatchConfig { reverse: false, offset: 1 }
+[2m7285.824213058s[0m [32m INFO[0m Next client: Address("0x4bdf350")
+[2m7285.904091781s[0m [32m INFO[0m Received close command with kill: false
+[2m7553.938884562s[0m [32m INFO[0m Received init command SimpleConfig { ignore_monitors: false, ignore_workspaces: false, sort_recent: true, filter_current_workspace: false, filter_current_monitor: false, filter_same_class: false, include_special_workspaces: false, switch_type: Client } and GuiConfig { max_switch_offset: 0, hide_active_window_border: false, monitors: None, show_workspaces_on_all_monitors: false, show_launcher: false } and Config { mod_key: SuperL, key: "tab", close: ModKeyRelease, reverse_key: Mod(ShiftL) }
+[2m7553.994884893s[0m [32m INFO[0m Received switch command DispatchConfig { reverse: false, offset: 1 }
+[2m7553.994953343s[0m [32m INFO[0m Next client: Address("0x4ba4b80")
+[2m7556.415097141s[0m [32m INFO[0m Received close command with kill: false
+[2m7557.198617396s[0m [32m INFO[0m Received init command SimpleConfig { ignore_monitors: false, ignore_workspaces: false, sort_recent: true, filter_current_workspace: false, filter_current_monitor: false, filter_same_class: false, include_special_workspaces: false, switch_type: Client } and GuiConfig { max_switch_offset: 0, hide_active_window_border: false, monitors: None, show_workspaces_on_all_monitors: false, show_launcher: false } and Config { mod_key: SuperL, key: "tab", close: ModKeyRelease, reverse_key: Mod(ShiftL) }
+[2m7557.252816575s[0m [32m INFO[0m Received switch command DispatchConfig { reverse: false, offset: 1 }
+[2m7557.252881117s[0m [32m INFO[0m Next client: Address("0x5a3c330")
+[2m7557.892948314s[0m [32m INFO[0m Received close command with kill: false
+[2m7558.594866306s[0m [32m INFO[0m Received init command SimpleConfig { ignore_monitors: false, ignore_workspaces: false, sort_recent: true, filter_current_workspace: false, filter_current_monitor: false, filter_same_class: false, include_special_workspaces: false, switch_type: Client } and GuiConfig { max_switch_offset: 0, hide_active_window_border: false, monitors: None, show_workspaces_on_all_monitors: false, show_launcher: false } and Config { mod_key: SuperL, key: "tab", close: ModKeyRelease, reverse_key: Mod(ShiftL) }
+[2m7558.651084089s[0m [32m INFO[0m Received switch command DispatchConfig { reverse: false, offset: 1 }
+[2m7558.651147098s[0m [32m INFO[0m Next client: Address("0x4ba4b80")
+[2m7558.796443007s[0m [32m INFO[0m Received close command with kill: false
+[2m7559.607501883s[0m [32m INFO[0m Received init command SimpleConfig { ignore_monitors: false, ignore_workspaces: false, sort_recent: true, filter_current_workspace: false, filter_current_monitor: false, filter_same_class: false, include_special_workspaces: false, switch_type: Client } and GuiConfig { max_switch_offset: 0, hide_active_window_border: false, monitors: None, show_workspaces_on_all_monitors: false, show_launcher: false } and Config { mod_key: SuperL, key: "tab", close: ModKeyRelease, reverse_key: Mod(ShiftL) }
+[2m7559.675218600s[0m [32m INFO[0m Received switch command DispatchConfig { reverse: false, offset: 1 }
+[2m7559.675344789s[0m [32m INFO[0m Next client: Address("0x5a3c330")
+[2m7559.707498313s[0m [32m INFO[0m Received close command with kill: false
+[2m7560.201815521s[0m [32m INFO[0m Received init command SimpleConfig { ignore_monitors: false, ignore_workspaces: false, sort_recent: true, filter_current_workspace: false, filter_current_monitor: false, filter_same_class: false, include_special_workspaces: false, switch_type: Client } and GuiConfig { max_switch_offset: 0, hide_active_window_border: false, monitors: None, show_workspaces_on_all_monitors: false, show_launcher: false } and Config { mod_key: SuperL, key: "tab", close: ModKeyRelease, reverse_key: Mod(ShiftL) }
+[2m7560.262039844s[0m [32m INFO[0m Received switch command DispatchConfig { reverse: false, offset: 1 }
+[2m7560.262094247s[0m [32m INFO[0m Next client: Address("0x4ba4b80")
+[2m7560.853949157s[0m [32m INFO[0m Received switch command DispatchConfig { reverse: false, offset: 1 }
+[2m7560.854012808s[0m [32m INFO[0m Next client: Address("0x4bad240")
+[2m7561.834063563s[0m [32m INFO[0m Received close command with kill: false
+[2m10762.615208024s[0m [32m INFO[0m Received init command SimpleConfig { ignore_monitors: false, ignore_workspaces: false, sort_recent: true, filter_current_workspace: false, filter_current_monitor: false, filter_same_class: false, include_special_workspaces: false, switch_type: Client } and GuiConfig { max_switch_offset: 0, hide_active_window_border: false, monitors: None, show_workspaces_on_all_monitors: false, show_launcher: false } and Config { mod_key: SuperL, key: "tab", close: ModKeyRelease, reverse_key: Mod(ShiftL) }
+[2m10762.673132661s[0m [32m INFO[0m Received switch command DispatchConfig { reverse: false, offset: 1 }
+[2m10762.673238822s[0m [32m INFO[0m Next client: Address("0x4bad240")
+[2m10763.696470643s[0m [32m INFO[0m Received switch command DispatchConfig { reverse: false, offset: 1 }
+[2m10763.696548170s[0m [32m INFO[0m Next client: Address("0x4ba4b80")
+[2m10763.730846600s[0m [32m INFO[0m Received close command with kill: false
+[2m19870.883456814s[0m [32m INFO[0m Received init command SimpleConfig { ignore_monitors: false, ignore_workspaces: false, sort_recent: true, filter_current_workspace: false, filter_current_monitor: false, filter_same_class: false, include_special_workspaces: false, switch_type: Client } and GuiConfig { max_switch_offset: 0, hide_active_window_border: false, monitors: None, show_workspaces_on_all_monitors: false, show_launcher: false } and Config { mod_key: SuperL, key: "tab", close: ModKeyRelease, reverse_key: Mod(ShiftL) }
+[2m19870.939090799s[0m [32m INFO[0m Received switch command DispatchConfig { reverse: false, offset: 1 }
+[2m19870.939164259s[0m [32m INFO[0m Next client: Address("0x4bad240")
+[2m19871.907368245s[0m [32m INFO[0m Received switch command DispatchConfig { reverse: false, offset: 1 }
+[2m19871.907455972s[0m [32m INFO[0m Next client: Address("0x4ba4b80")
+[2m19871.942905892s[0m [32m INFO[0m Received close command with kill: false
+[2m19880.694216305s[0m [32m INFO[0m Received init command SimpleConfig { ignore_monitors: false, ignore_workspaces: false, sort_recent: true, filter_current_workspace: false, filter_current_monitor: false, filter_same_class: false, include_special_workspaces: false, switch_type: Client } and GuiConfig { max_switch_offset: 0, hide_active_window_border: false, monitors: None, show_workspaces_on_all_monitors: false, show_launcher: false } and Config { mod_key: SuperL, key: "tab", close: ModKeyRelease, reverse_key: Mod(ShiftL) }
+[2m19880.745485951s[0m [32m INFO[0m Received switch command DispatchConfig { reverse: false, offset: 1 }
+[2m19880.745546857s[0m [32m INFO[0m Next client: Address("0x4ba4b80")
+[2m19881.711701350s[0m [32m INFO[0m Received switch command DispatchConfig { reverse: false, offset: 1 }
+[2m19881.711788324s[0m [32m INFO[0m Next client: Address("0x4a08e00")
+[2m19883.374103484s[0m [32m INFO[0m Received close command with kill: false
+[2m19885.871207474s[0m [32m INFO[0m Received init command SimpleConfig { ignore_monitors: false, ignore_workspaces: false, sort_recent: true, filter_current_workspace: false, filter_current_monitor: false, filter_same_class: false, include_special_workspaces: false, switch_type: Client } and GuiConfig { max_switch_offset: 0, hide_active_window_border: false, monitors: None, show_workspaces_on_all_monitors: false, show_launcher: false } and Config { mod_key: SuperL, key: "tab", close: ModKeyRelease, reverse_key: Mod(ShiftL) }
+[2m19885.925045987s[0m [32m INFO[0m Received switch command DispatchConfig { reverse: false, offset: 1 }
+[2m19885.925105239s[0m [32m INFO[0m Next client: Address("0x4c62680")
+[2m19887.550650288s[0m [32m INFO[0m Received switch command DispatchConfig { reverse: false, offset: 1 }
+[2m19887.550719158s[0m [32m INFO[0m Next client: Address("0x4ba4b80")
+[2m19888.039307627s[0m [32m INFO[0m Received switch command DispatchConfig { reverse: false, offset: 1 }
+[2m19888.039367380s[0m [32m INFO[0m Next client: Address("0x4bad240")
+[2m19888.234682184s[0m [32m INFO[0m Received switch command DispatchConfig { reverse: false, offset: 1 }
+[2m19888.234761043s[0m [32m INFO[0m Next client: Address("0x5a3c330")
+[2m19888.413919964s[0m [32m INFO[0m Received switch command DispatchConfig { reverse: false, offset: 1 }
+[2m19888.413987662s[0m [32m INFO[0m Next client: Address("0x4efafe0")
+[2m19888.965137091s[0m [32m INFO[0m Received switch command DispatchConfig { reverse: false, offset: 1 }
+[2m19888.965200662s[0m [32m INFO[0m Next client: Address("0x5111d80")
+[2m19889.379572305s[0m [32m INFO[0m Received switch command DispatchConfig { reverse: false, offset: 1 }
+[2m19889.379637999s[0m [32m INFO[0m Next client: Address("0x5ae42b0")
+[2m19889.780199003s[0m [32m INFO[0m Received switch command DispatchConfig { reverse: false, offset: 1 }
+[2m19889.780281640s[0m [32m INFO[0m Next client: Address("0x4f0da50")
+[2m19890.514903243s[0m [32m INFO[0m Received switch command DispatchConfig { reverse: false, offset: 1 }
+[2m19890.514984547s[0m [32m INFO[0m Next client: Address("0x4e8db20")
+[2m19891.132200951s[0m [32m INFO[0m Received switch command DispatchConfig { reverse: false, offset: 1 }
+[2m19891.132289559s[0m [32m INFO[0m Next client: Address("0x4b51790")
+[2m19893.617520482s[0m [32m INFO[0m Switching to client Address("0x4a08e00")
+[2m19893.617598751s[0m [32m INFO[0m Exiting on click of client window
+
+(hyprswitch:295525): Gtk-WARNING **: 00:06:19.107: Broken accounting of active state for widget 0x7fbe4c13d2f0(GtkApplicationWindow)
+[2m19937.913301886s[0m [32m INFO[0m Received init command SimpleConfig { ignore_monitors: false, ignore_workspaces: false, sort_recent: true, filter_current_workspace: false, filter_current_monitor: false, filter_same_class: false, include_special_workspaces: false, switch_type: Client } and GuiConfig { max_switch_offset: 0, hide_active_window_border: false, monitors: None, show_workspaces_on_all_monitors: false, show_launcher: false } and Config { mod_key: SuperL, key: "tab", close: ModKeyRelease, reverse_key: Mod(ShiftL) }
+[2m19937.996814786s[0m [32m INFO[0m Received switch command DispatchConfig { reverse: false, offset: 1 }
+[2m19937.996916238s[0m [32m INFO[0m Next client: Address("0x4a08e00")
+[2m19941.837971460s[0m [32m INFO[0m Received close command with kill: false
+[2m20121.796869620s[0m [32m INFO[0m Received init command SimpleConfig { ignore_monitors: false, ignore_workspaces: false, sort_recent: true, filter_current_workspace: false, filter_current_monitor: false, filter_same_class: false, include_special_workspaces: false, switch_type: Client } and GuiConfig { max_switch_offset: 0, hide_active_window_border: false, monitors: None, show_workspaces_on_all_monitors: false, show_launcher: false } and Config { mod_key: SuperL, key: "tab", close: ModKeyRelease, reverse_key: Mod(ShiftL) }
+[2m20121.855651590s[0m [32m INFO[0m Received switch command DispatchConfig { reverse: false, offset: 1 }
+[2m20121.855779392s[0m [32m INFO[0m Next client: Address("0x4bad240")
+[2m20122.823991310s[0m [32m INFO[0m Received switch command DispatchConfig { reverse: false, offset: 1 }
+[2m20122.824053197s[0m [32m INFO[0m Next client: Address("0x4ba4b80")
+[2m20122.902987141s[0m [32m INFO[0m Received close command with kill: false
+[2m20131.711799971s[0m [32m INFO[0m Received init command SimpleConfig { ignore_monitors: false, ignore_workspaces: false, sort_recent: true, filter_current_workspace: false, filter_current_monitor: false, filter_same_class: false, include_special_workspaces: false, switch_type: Client } and GuiConfig { max_switch_offset: 0, hide_active_window_border: false, monitors: None, show_workspaces_on_all_monitors: false, show_launcher: false } and Config { mod_key: SuperL, key: "tab", close: ModKeyRelease, reverse_key: Mod(ShiftL) }
+[2m20131.764811888s[0m [32m INFO[0m Received switch command DispatchConfig { reverse: false, offset: 1 }
+[2m20131.764893503s[0m [32m INFO[0m Next client: Address("0x4c62680")
+[2m20132.832812916s[0m [32m INFO[0m Received close command with kill: false
+[2m20133.448606192s[0m [32m INFO[0m Received init command SimpleConfig { ignore_monitors: false, ignore_workspaces: false, sort_recent: true, filter_current_workspace: false, filter_current_monitor: false, filter_same_class: false, include_special_workspaces: false, switch_type: Client } and GuiConfig { max_switch_offset: 0, hide_active_window_border: false, monitors: None, show_workspaces_on_all_monitors: false, show_launcher: false } and Config { mod_key: SuperL, key: "tab", close: ModKeyRelease, reverse_key: Mod(ShiftL) }
+[2m20133.500892354s[0m [32m INFO[0m Received switch command DispatchConfig { reverse: false, offset: 1 }
+[2m20133.500955914s[0m [32m INFO[0m Next client: Address("0x5a3c330")
+[2m20133.584316826s[0m [32m INFO[0m Received close command with kill: false
+[2m20133.894824897s[0m [32m INFO[0m Received init command SimpleConfig { ignore_monitors: false, ignore_workspaces: false, sort_recent: true, filter_current_workspace: false, filter_current_monitor: false, filter_same_class: false, include_special_workspaces: false, switch_type: Client } and GuiConfig { max_switch_offset: 0, hide_active_window_border: false, monitors: None, show_workspaces_on_all_monitors: false, show_launcher: false } and Config { mod_key: SuperL, key: "tab", close: ModKeyRelease, reverse_key: Mod(ShiftL) }
+[2m20133.948200082s[0m [32m INFO[0m Received switch command DispatchConfig { reverse: false, offset: 1 }
+[2m20133.948257391s[0m [32m INFO[0m Next client: Address("0x4c62680")
+[2m20134.115534969s[0m [32m INFO[0m Received switch command DispatchConfig { reverse: false, offset: 1 }
+[2m20134.115607095s[0m [32m INFO[0m Next client: Address("0x4ba4b80")
+[2m20134.539045005s[0m [32m INFO[0m Received switch command DispatchConfig { reverse: false, offset: 1 }
+[2m20134.539117703s[0m [32m INFO[0m Next client: Address("0x4a08e00")
+[2m20135.117206847s[0m [32m INFO[0m Received close command with kill: false
+[2m20138.890622765s[0m [32m INFO[0m Received init command SimpleConfig { ignore_monitors: false, ignore_workspaces: false, sort_recent: true, filter_current_workspace: false, filter_current_monitor: false, filter_same_class: false, include_special_workspaces: false, switch_type: Client } and GuiConfig { max_switch_offset: 0, hide_active_window_border: false, monitors: None, show_workspaces_on_all_monitors: false, show_launcher: false } and Config { mod_key: SuperL, key: "tab", close: ModKeyRelease, reverse_key: Mod(ShiftL) }
+[2m20138.944456499s[0m [32m INFO[0m Received switch command DispatchConfig { reverse: false, offset: 1 }
+[2m20138.944520050s[0m [32m INFO[0m Next client: Address("0x5a3c330")
+[2m20139.587172607s[0m [32m INFO[0m Received switch command DispatchConfig { reverse: false, offset: 1 }
+[2m20139.587233212s[0m [32m INFO[0m Next client: Address("0x4c62680")
+[2m20140.150935435s[0m [32m INFO[0m Received close command with kill: false
+[2m20311.295711611s[0m [32m INFO[0m Received init command SimpleConfig { ignore_monitors: false, ignore_workspaces: false, sort_recent: true, filter_current_workspace: false, filter_current_monitor: false, filter_same_class: false, include_special_workspaces: false, switch_type: Client } and GuiConfig { max_switch_offset: 0, hide_active_window_border: false, monitors: None, show_workspaces_on_all_monitors: false, show_launcher: false } and Config { mod_key: SuperL, key: "tab", close: ModKeyRelease, reverse_key: Mod(ShiftL) }
+[2m20311.362383821s[0m [32m INFO[0m Received switch command DispatchConfig { reverse: false, offset: 1 }
+[2m20311.362449556s[0m [32m INFO[0m Next client: Address("0x4bad240")
+[2m20311.788970487s[0m [32m INFO[0m Received close command with kill: false
+[2m20312.477783990s[0m [32m INFO[0m Received init command SimpleConfig { ignore_monitors: false, ignore_workspaces: false, sort_recent: true, filter_current_workspace: false, filter_current_monitor: false, filter_same_class: false, include_special_workspaces: false, switch_type: Client } and GuiConfig { max_switch_offset: 0, hide_active_window_border: false, monitors: None, show_workspaces_on_all_monitors: false, show_launcher: false } and Config { mod_key: SuperL, key: "tab", close: ModKeyRelease, reverse_key: Mod(ShiftL) }
+[2m20312.535959701s[0m [32m INFO[0m Received switch command DispatchConfig { reverse: false, offset: 1 }
+[2m20312.536024003s[0m [32m INFO[0m Next client: Address("0x4a08e00")
+[2m20313.147118625s[0m [32m INFO[0m Received switch command DispatchConfig { reverse: false, offset: 1 }
+[2m20313.147193106s[0m [32m INFO[0m Next client: Address("0x4ba4b80")
+[2m20313.374534662s[0m [32m INFO[0m Received switch command DispatchConfig { reverse: false, offset: 1 }
+[2m20313.374605957s[0m [32m INFO[0m Next client: Address("0x5a3c330")
+[2m20313.968421568s[0m [32m INFO[0m Received close command with kill: false
+[2m21806.072840447s[0m [32m INFO[0m Received init command SimpleConfig { ignore_monitors: false, ignore_workspaces: false, sort_recent: true, filter_current_workspace: false, filter_current_monitor: false, filter_same_class: false, include_special_workspaces: false, switch_type: Client } and GuiConfig { max_switch_offset: 0, hide_active_window_border: false, monitors: None, show_workspaces_on_all_monitors: false, show_launcher: false } and Config { mod_key: SuperL, key: "tab", close: ModKeyRelease, reverse_key: Mod(ShiftL) }
+[2m21806.135858422s[0m [32m INFO[0m Received switch command DispatchConfig { reverse: false, offset: 1 }
+[2m21806.135963350s[0m [32m INFO[0m Next client: Address("0x5a3c330")
+[2m21806.170329916s[0m [32m INFO[0m Received close command with kill: false
+[2m21810.219201985s[0m [32m INFO[0m Received init command SimpleConfig { ignore_monitors: false, ignore_workspaces: false, sort_recent: true, filter_current_workspace: false, filter_current_monitor: false, filter_same_class: false, include_special_workspaces: false, switch_type: Client } and GuiConfig { max_switch_offset: 0, hide_active_window_border: false, monitors: None, show_workspaces_on_all_monitors: false, show_launcher: false } and Config { mod_key: SuperL, key: "tab", close: ModKeyRelease, reverse_key: Mod(ShiftL) }
+[2m21810.293610447s[0m [32m INFO[0m Received switch command DispatchConfig { reverse: false, offset: 1 }
+[2m21810.293744029s[0m [32m INFO[0m Next client: Address("0x4f0da50")
+[2m21810.324372434s[0m [32m INFO[0m Received close command with kill: false
+[2m21830.176353230s[0m [32m INFO[0m Received init command SimpleConfig { ignore_monitors: false, ignore_workspaces: false, sort_recent: true, filter_current_workspace: false, filter_current_monitor: false, filter_same_class: false, include_special_workspaces: false, switch_type: Client } and GuiConfig { max_switch_offset: 0, hide_active_window_border: false, monitors: None, show_workspaces_on_all_monitors: false, show_launcher: false } and Config { mod_key: SuperL, key: "tab", close: ModKeyRelease, reverse_key: Mod(ShiftL) }
+[2m21830.255907015s[0m [32m INFO[0m Received switch command DispatchConfig { reverse: false, offset: 1 }
+[2m21830.255972288s[0m [32m INFO[0m Next client: Address("0x5a3c330")
+[2m21830.292530018s[0m [32m INFO[0m Received close command with kill: false
+[2m21834.817011344s[0m [32m INFO[0m Received init command SimpleConfig { ignore_monitors: false, ignore_workspaces: false, sort_recent: true, filter_current_workspace: false, filter_current_monitor: false, filter_same_class: false, include_special_workspaces: false, switch_type: Client } and GuiConfig { max_switch_offset: 0, hide_active_window_border: false, monitors: None, show_workspaces_on_all_monitors: false, show_launcher: false } and Config { mod_key: SuperL, key: "tab", close: ModKeyRelease, reverse_key: Mod(ShiftL) }
+[2m21834.867577881s[0m [32m INFO[0m Received switch command DispatchConfig { reverse: false, offset: 1 }
+[2m21834.867632123s[0m [32m INFO[0m Next client: Address("0x4f0da50")
+[2m21837.035908015s[0m [32m INFO[0m Received close command with kill: false
+[2m23104.319542331s[0m [32m INFO[0m Received init command SimpleConfig { ignore_monitors: false, ignore_workspaces: false, sort_recent: true, filter_current_workspace: false, filter_current_monitor: false, filter_same_class: false, include_special_workspaces: false, switch_type: Client } and GuiConfig { max_switch_offset: 0, hide_active_window_border: false, monitors: None, show_workspaces_on_all_monitors: false, show_launcher: false } and Config { mod_key: SuperL, key: "tab", close: ModKeyRelease, reverse_key: Mod(ShiftL) }
+[2m23104.373441216s[0m [32m INFO[0m Received switch command DispatchConfig { reverse: false, offset: 1 }
+[2m23104.373508373s[0m [32m INFO[0m Next client: Address("0x4ba4b80")
+[2m23104.446395391s[0m [32m INFO[0m Received close command with kill: false
+[2m24225.700684753s[0m [32m INFO[0m Received init command SimpleConfig { ignore_monitors: false, ignore_workspaces: false, sort_recent: true, filter_current_workspace: false, filter_current_monitor: false, filter_same_class: false, include_special_workspaces: false, switch_type: Client } and GuiConfig { max_switch_offset: 0, hide_active_window_border: false, monitors: None, show_workspaces_on_all_monitors: false, show_launcher: false } and Config { mod_key: SuperL, key: "tab", close: ModKeyRelease, reverse_key: Mod(ShiftL) }
+[2m24225.753797336s[0m [32m INFO[0m Received switch command DispatchConfig { reverse: false, offset: 1 }
+[2m24225.753863440s[0m [32m INFO[0m Next client: Address("0x5ae42b0")
+[2m24226.836582583s[0m [32m INFO[0m Received switch command DispatchConfig { reverse: false, offset: 1 }
+[2m24226.836651884s[0m [32m INFO[0m Next client: Address("0x5114d60")
+[2m24227.104118866s[0m [32m INFO[0m Received switch command DispatchConfig { reverse: false, offset: 1 }
+[2m24227.104181184s[0m [32m INFO[0m Next client: Address("0x4a3c800")
+[2m24227.467836750s[0m [32m INFO[0m Received switch command DispatchConfig { reverse: false, offset: 1 }
+[2m24227.467914026s[0m [32m INFO[0m Next client: Address("0x5b61480")
+[2m24227.698472810s[0m [32m INFO[0m Received switch command DispatchConfig { reverse: false, offset: 1 }
+[2m24227.698536100s[0m [32m INFO[0m Next client: Address("0x4bad240")
+[2m24227.904885187s[0m [32m INFO[0m Received switch command DispatchConfig { reverse: false, offset: 1 }
+[2m24227.904958605s[0m [32m INFO[0m Next client: Address("0x4a08e00")
+[2m24228.123464860s[0m [32m INFO[0m Received switch command DispatchConfig { reverse: false, offset: 1 }
+[2m24228.123535383s[0m [32m INFO[0m Next client: Address("0x4efafe0")
+[2m24228.394258298s[0m [32m INFO[0m Received switch command DispatchConfig { reverse: false, offset: 1 }
+[2m24228.394315916s[0m [32m INFO[0m Next client: Address("0x4ba4b80")
+[2m24228.636073590s[0m [32m INFO[0m Received switch command DispatchConfig { reverse: false, offset: 1 }
+[2m24228.636131209s[0m [32m INFO[0m Next client: Address("0x4e49ec0")
+[2m24228.892923367s[0m [32m INFO[0m Received switch command DispatchConfig { reverse: false, offset: 1 }
+[2m24228.892993689s[0m [32m INFO[0m Next client: Address("0x4f0da50")
+[2m24229.105017459s[0m [32m INFO[0m Received switch command DispatchConfig { reverse: false, offset: 1 }
+[2m24229.105072463s[0m [32m INFO[0m Next client: Address("0x4f055e0")
+[2m24229.307809937s[0m [32m INFO[0m Received switch command DispatchConfig { reverse: false, offset: 1 }
+[2m24229.307874559s[0m [32m INFO[0m Next client: Address("0x59420b0")
+[2m24229.515216152s[0m [32m INFO[0m Received switch command DispatchConfig { reverse: false, offset: 1 }
+[2m24229.515281986s[0m [32m INFO[0m Next client: Address("0x5a8ef90")
+[2m24229.722040028s[0m [32m INFO[0m Received switch command DispatchConfig { reverse: false, offset: 1 }
+[2m24229.722106514s[0m [32m INFO[0m Next client: Address("0x5a3c330")
+[2m24229.916815962s[0m [32m INFO[0m Received switch command DispatchConfig { reverse: false, offset: 1 }
+[2m24229.916889401s[0m [32m INFO[0m Next client: Address("0x4e8db20")
+[2m24230.156477227s[0m [32m INFO[0m Received switch command DispatchConfig { reverse: false, offset: 1 }
+[2m24230.156541538s[0m [32m INFO[0m Next client: Address("0x5b5f7d0")
+[2m24230.351554531s[0m [32m INFO[0m Received switch command DispatchConfig { reverse: false, offset: 1 }
+[2m24230.351610186s[0m [32m INFO[0m Next client: Address("0x4ecb020")
+[2m24230.551497267s[0m [32m INFO[0m Received switch command DispatchConfig { reverse: false, offset: 1 }
+[2m24230.551555327s[0m [32m INFO[0m Next client: Address("0x5ae42b0")
+[2m24230.912192420s[0m [32m INFO[0m Received switch command DispatchConfig { reverse: false, offset: 1 }
+[2m24230.912251942s[0m [32m INFO[0m Next client: Address("0x5114d60")
+[2m24231.915724131s[0m [32m INFO[0m Received close command with kill: false
+[2m24232.953046791s[0m [32m INFO[0m Received init command SimpleConfig { ignore_monitors: false, ignore_workspaces: false, sort_recent: true, filter_current_workspace: false, filter_current_monitor: false, filter_same_class: false, include_special_workspaces: false, switch_type: Client } and GuiConfig { max_switch_offset: 0, hide_active_window_border: false, monitors: None, show_workspaces_on_all_monitors: false, show_launcher: false } and Config { mod_key: SuperL, key: "tab", close: ModKeyRelease, reverse_key: Mod(ShiftL) }
+[2m24233.007175185s[0m [32m INFO[0m Received switch command DispatchConfig { reverse: false, offset: 1 }
+[2m24233.007295091s[0m [32m INFO[0m Next client: Address("0x4ecb020")
+[2m24233.916621695s[0m [32m INFO[0m Received switch command DispatchConfig { reverse: false, offset: 1 }
+[2m24233.916685967s[0m [32m INFO[0m Next client: Address("0x5ae42b0")
+[2m24233.991322097s[0m [32m INFO[0m Received close command with kill: false
+[2m24235.210360435s[0m [32m INFO[0m Received init command SimpleConfig { ignore_monitors: false, ignore_workspaces: false, sort_recent: true, filter_current_workspace: false, filter_current_monitor: false, filter_same_class: false, include_special_workspaces: false, switch_type: Client } and GuiConfig { max_switch_offset: 0, hide_active_window_border: false, monitors: None, show_workspaces_on_all_monitors: false, show_launcher: false } and Config { mod_key: SuperL, key: "tab", close: ModKeyRelease, reverse_key: Mod(ShiftL) }
+[2m24235.262785892s[0m [32m INFO[0m Received switch command DispatchConfig { reverse: false, offset: 1 }
+[2m24235.262843601s[0m [32m INFO[0m Next client: Address("0x5114d60")
+[2m24235.982911330s[0m [32m INFO[0m Received switch command DispatchConfig { reverse: false, offset: 1 }
+[2m24235.982983096s[0m [32m INFO[0m Next client: Address("0x4ecb020")
+[2m24236.017583647s[0m [32m INFO[0m Received close command with kill: false
+[2m24237.091023500s[0m [32m INFO[0m Received init command SimpleConfig { ignore_monitors: false, ignore_workspaces: false, sort_recent: true, filter_current_workspace: false, filter_current_monitor: false, filter_same_class: false, include_special_workspaces: false, switch_type: Client } and GuiConfig { max_switch_offset: 0, hide_active_window_border: false, monitors: None, show_workspaces_on_all_monitors: false, show_launcher: false } and Config { mod_key: SuperL, key: "tab", close: ModKeyRelease, reverse_key: Mod(ShiftL) }
+[2m24237.153274923s[0m [32m INFO[0m Received switch command DispatchConfig { reverse: false, offset: 1 }
+[2m24237.153370503s[0m [32m INFO[0m Next client: Address("0x5ae42b0")
+[2m24237.187223382s[0m [32m INFO[0m Received close command with kill: false
+[2m24237.994615995s[0m [32m INFO[0m Received init command SimpleConfig { ignore_monitors: false, ignore_workspaces: false, sort_recent: true, filter_current_workspace: false, filter_current_monitor: false, filter_same_class: false, include_special_workspaces: false, switch_type: Client } and GuiConfig { max_switch_offset: 0, hide_active_window_border: false, monitors: None, show_workspaces_on_all_monitors: false, show_launcher: false } and Config { mod_key: SuperL, key: "tab", close: ModKeyRelease, reverse_key: Mod(ShiftL) }
+[2m24238.062437391s[0m [32m INFO[0m Received switch command DispatchConfig { reverse: false, offset: 1 }
+[2m24238.062544003s[0m [32m INFO[0m Next client: Address("0x4ecb020")
+[2m24238.095211302s[0m [32m INFO[0m Received close command with kill: false
+[2m24238.838863302s[0m [32m INFO[0m Received init command SimpleConfig { ignore_monitors: false, ignore_workspaces: false, sort_recent: true, filter_current_workspace: false, filter_current_monitor: false, filter_same_class: false, include_special_workspaces: false, switch_type: Client } and GuiConfig { max_switch_offset: 0, hide_active_window_border: false, monitors: None, show_workspaces_on_all_monitors: false, show_launcher: false } and Config { mod_key: SuperL, key: "tab", close: ModKeyRelease, reverse_key: Mod(ShiftL) }
+[2m24238.893186176s[0m [32m INFO[0m Received switch command DispatchConfig { reverse: false, offset: 1 }
+[2m24238.893239346s[0m [32m INFO[0m Next client: Address("0x5ae42b0")
+[2m24238.976066343s[0m [32m INFO[0m Received close command with kill: false
+[2m24239.809582241s[0m [32m INFO[0m Received init command SimpleConfig { ignore_monitors: false, ignore_workspaces: false, sort_recent: true, filter_current_workspace: false, filter_current_monitor: false, filter_same_class: false, include_special_workspaces: false, switch_type: Client } and GuiConfig { max_switch_offset: 0, hide_active_window_border: false, monitors: None, show_workspaces_on_all_monitors: false, show_launcher: false } and Config { mod_key: SuperL, key: "tab", close: ModKeyRelease, reverse_key: Mod(ShiftL) }
+[2m24239.868396420s[0m [32m INFO[0m Received switch command DispatchConfig { reverse: false, offset: 1 }
+[2m24239.868452266s[0m [32m INFO[0m Next client: Address("0x4ecb020")
+[2m24239.953667796s[0m [32m INFO[0m Received close command with kill: false
+[2m24240.654034946s[0m [32m INFO[0m Received init command SimpleConfig { ignore_monitors: false, ignore_workspaces: false, sort_recent: true, filter_current_workspace: false, filter_current_monitor: false, filter_same_class: false, include_special_workspaces: false, switch_type: Client } and GuiConfig { max_switch_offset: 0, hide_active_window_border: false, monitors: None, show_workspaces_on_all_monitors: false, show_launcher: false } and Config { mod_key: SuperL, key: "tab", close: ModKeyRelease, reverse_key: Mod(ShiftL) }
+[2m24240.707783936s[0m [32m INFO[0m Received switch command DispatchConfig { reverse: false, offset: 1 }
+[2m24240.707863877s[0m [32m INFO[0m Next client: Address("0x5ae42b0")
+[2m24240.778356622s[0m [32m INFO[0m Received close command with kill: false
+[2m24241.392268572s[0m [32m INFO[0m Received init command SimpleConfig { ignore_monitors: false, ignore_workspaces: false, sort_recent: true, filter_current_workspace: false, filter_current_monitor: false, filter_same_class: false, include_special_workspaces: false, switch_type: Client } and GuiConfig { max_switch_offset: 0, hide_active_window_border: false, monitors: None, show_workspaces_on_all_monitors: false, show_launcher: false } and Config { mod_key: SuperL, key: "tab", close: ModKeyRelease, reverse_key: Mod(ShiftL) }
+[2m24241.449819896s[0m [32m INFO[0m Received switch command DispatchConfig { reverse: false, offset: 1 }
+[2m24241.449923853s[0m [32m INFO[0m Next client: Address("0x4ecb020")
+[2m24241.481466367s[0m [32m INFO[0m Received close command with kill: false
+[2m24242.139335110s[0m [32m INFO[0m Received init command SimpleConfig { ignore_monitors: false, ignore_workspaces: false, sort_recent: true, filter_current_workspace: false, filter_current_monitor: false, filter_same_class: false, include_special_workspaces: false, switch_type: Client } and GuiConfig { max_switch_offset: 0, hide_active_window_border: false, monitors: None, show_workspaces_on_all_monitors: false, show_launcher: false } and Config { mod_key: SuperL, key: "tab", close: ModKeyRelease, reverse_key: Mod(ShiftL) }
+[2m24242.191017486s[0m [32m INFO[0m Received switch command DispatchConfig { reverse: false, offset: 1 }
+[2m24242.191079002s[0m [32m INFO[0m Next client: Address("0x5ae42b0")
+[2m24242.678240291s[0m [32m INFO[0m Received switch command DispatchConfig { reverse: false, offset: 1 }
+[2m24242.678304703s[0m [32m INFO[0m Next client: Address("0x5114d60")
+[2m24242.858371543s[0m [32m INFO[0m Received switch command DispatchConfig { reverse: false, offset: 1 }
+[2m24242.858433991s[0m [32m INFO[0m Next client: Address("0x4a3c800")
+[2m24243.393982141s[0m [32m INFO[0m Received close command with kill: false
+[2m24244.095601783s[0m [32m INFO[0m Received init command SimpleConfig { ignore_monitors: false, ignore_workspaces: false, sort_recent: true, filter_current_workspace: false, filter_current_monitor: false, filter_same_class: false, include_special_workspaces: false, switch_type: Client } and GuiConfig { max_switch_offset: 0, hide_active_window_border: false, monitors: None, show_workspaces_on_all_monitors: false, show_launcher: false } and Config { mod_key: SuperL, key: "tab", close: ModKeyRelease, reverse_key: Mod(ShiftL) }
+[2m24244.148094180s[0m [32m INFO[0m Received switch command DispatchConfig { reverse: false, offset: 1 }
+[2m24244.148155385s[0m [32m INFO[0m Next client: Address("0x4ecb020")
+[2m24244.379846193s[0m [32m INFO[0m Received close command with kill: false
+[2m24244.881291317s[0m [32m INFO[0m Received init command SimpleConfig { ignore_monitors: false, ignore_workspaces: false, sort_recent: true, filter_current_workspace: false, filter_current_monitor: false, filter_same_class: false, include_special_workspaces: false, switch_type: Client } and GuiConfig { max_switch_offset: 0, hide_active_window_border: false, monitors: None, show_workspaces_on_all_monitors: false, show_launcher: false } and Config { mod_key: SuperL, key: "tab", close: ModKeyRelease, reverse_key: Mod(ShiftL) }
+[2m24244.933756453s[0m [32m INFO[0m Received switch command DispatchConfig { reverse: false, offset: 1 }
+[2m24244.933821375s[0m [32m INFO[0m Next client: Address("0x4a3c800")
+[2m24245.213166260s[0m [32m INFO[0m Received close command with kill: false
+[2m24245.685160492s[0m [32m INFO[0m Received init command SimpleConfig { ignore_monitors: false, ignore_workspaces: false, sort_recent: true, filter_current_workspace: false, filter_current_monitor: false, filter_same_class: false, include_special_workspaces: false, switch_type: Client } and GuiConfig { max_switch_offset: 0, hide_active_window_border: false, monitors: None, show_workspaces_on_all_monitors: false, show_launcher: false } and Config { mod_key: SuperL, key: "tab", close: ModKeyRelease, reverse_key: Mod(ShiftL) }
+[2m24245.739223117s[0m [32m INFO[0m Received switch command DispatchConfig { reverse: false, offset: 1 }
+[2m24245.739329107s[0m [32m INFO[0m Next client: Address("0x4ecb020")
+[2m24245.972855255s[0m [32m INFO[0m Received switch command DispatchConfig { reverse: false, offset: 1 }
+[2m24245.972943983s[0m [32m INFO[0m Next client: Address("0x5ae42b0")
+[2m24246.263161313s[0m [32m INFO[0m Received close command with kill: false
+[2m24246.892144449s[0m [32m INFO[0m Received init command SimpleConfig { ignore_monitors: false, ignore_workspaces: false, sort_recent: true, filter_current_workspace: false, filter_current_monitor: false, filter_same_class: false, include_special_workspaces: false, switch_type: Client } and GuiConfig { max_switch_offset: 0, hide_active_window_border: false, monitors: None, show_workspaces_on_all_monitors: false, show_launcher: false } and Config { mod_key: SuperL, key: "tab", close: ModKeyRelease, reverse_key: Mod(ShiftL) }
+[2m24246.946328874s[0m [32m INFO[0m Received switch command DispatchConfig { reverse: false, offset: 1 }
+[2m24246.946382035s[0m [32m INFO[0m Next client: Address("0x4a3c800")
+[2m24247.092946731s[0m [32m INFO[0m Received close command with kill: false
+[2m24247.452986584s[0m [32m INFO[0m Received init command SimpleConfig { ignore_monitors: false, ignore_workspaces: false, sort_recent: true, filter_current_workspace: false, filter_current_monitor: false, filter_same_class: false, include_special_workspaces: false, switch_type: Client } and GuiConfig { max_switch_offset: 0, hide_active_window_border: false, monitors: None, show_workspaces_on_all_monitors: false, show_launcher: false } and Config { mod_key: SuperL, key: "tab", close: ModKeyRelease, reverse_key: Mod(ShiftL) }
+[2m24247.506325962s[0m [32m INFO[0m Received switch command DispatchConfig { reverse: false, offset: 1 }
+[2m24247.506383681s[0m [32m INFO[0m Next client: Address("0x5ae42b0")
+[2m24247.668079747s[0m [32m INFO[0m Received close command with kill: false
+[2m24247.962468071s[0m [32m INFO[0m Received init command SimpleConfig { ignore_monitors: false, ignore_workspaces: false, sort_recent: true, filter_current_workspace: false, filter_current_monitor: false, filter_same_class: false, include_special_workspaces: false, switch_type: Client } and GuiConfig { max_switch_offset: 0, hide_active_window_border: false, monitors: None, show_workspaces_on_all_monitors: false, show_launcher: false } and Config { mod_key: SuperL, key: "tab", close: ModKeyRelease, reverse_key: Mod(ShiftL) }
+[2m24248.025934624s[0m [32m INFO[0m Received switch command DispatchConfig { reverse: false, offset: 1 }
+[2m24248.025995970s[0m [32m INFO[0m Next client: Address("0x4a3c800")
+[2m24248.056216969s[0m [32m INFO[0m Received close command with kill: false

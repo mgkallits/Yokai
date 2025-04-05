@@ -1,0 +1,96 @@
+:root {
+    --border-color: rgba(58, 55, 57, 0.4);
+    --border-color-active: rgba(78, 74, 77, 0.9);
+    --bg-color: rgba(11, 9, 9, 0.6);
+    --bg-color-hover: rgba(105, 85, 85, 0.7);
+    --border-radius:16px;
+    --border-size: 2px;
+}
+
+.client {
+    font-size: 10px;
+    font-weight: bold;
+    /* border-radius: var(--border-radius);
+    background-color: var(--bg-color); */
+    /* border: 2px solid var(--border-color); */
+  }
+  
+  /* .client:hover {
+    background-color: var(--bg-color-hover);
+  }
+  
+  .client_active {
+    border: 3px solid var(--border-color-active);
+  } */
+
+/* Only clients: Don't show the workspace and monitor
+frames (use with --max-switch-offset=0) */
+.workspace {
+    /* remove workspace name */
+    font-size: 15px;
+    font-weight: normal;
+    font-family: monospace;
+    padding: 8px 12px;
+
+
+    background-color: var(--bg-color);
+    border: unset;
+
+}
+
+
+.workspace_special {
+  border: unset;
+}
+
+/* .workspace_active {
+  border: unset;
+} */
+
+.monitor {
+    background-color: transparent;
+    border: unset;
+}
+
+/* 
+.launcher {
+    min-width: 600px;
+    font-size: 20px;
+}
+
+.launcher-entry {
+    margin: 6px;
+    padding-top: 6px;
+    padding-bottom: 4px;
+    padding-left: 12px;
+}
+
+.launcher-exec {
+    font-size: 12px;
+}
+
+.launcher-list {
+    margin-left: 2px;
+    margin-right: 2px;
+    margin-bottom: 1px;
+}
+
+.launcher-item {
+    background-color: var(--bg-color);
+    border-radius: var(--border-radius);
+    padding-left: 6px;
+    padding-right: 6px;
+}
+
+.launcher-item:hover {
+    background-color: var(--bg-color-hover);
+}
+
+.launcher-item-selected {
+    background-color: var(--bg-color-hover);
+} */
+
+
+
+
+
