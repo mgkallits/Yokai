@@ -1,50 +1,66 @@
-{ pkgs, ... }:
+{
+  config,
+  pkgs,
+  inputs,
+  ...
+}:
 
 {
+  imports = [ inputs.nvf.nixosModules.default ];
 
-  # Global Configuration
-  programs.neovim = {
+  programs.nvf = {
     enable = true;
-    # defaultEditor = true;
-    viAlias = true;
-    vimAlias = true;
-    configure = {
-      customRC = ''
-        set number
-        set relativenumber
-        set tabstop=2
-        set shiftwidth=2
-        set expandtab
-        set cursorline
-        set clipboard+=unnamedplus  " Use system clipboard
-        set mouse=a  " Enable mouse support
-        set updatetime=300  " Faster cursor hold
-        " set list
+    settings = {
+      vim = {
+        viAlias = true;
+        vimAlias = true;
 
-        " Theme and appearance
-        syntax enable
-        " colorscheme gruvbox
-        set termguicolors    " True colors support for better themes
+        # Basic settings
+        options = {
+          number = true;
+          relativenumber = true;
+          tabstop = 2;
+          shiftwidth = 2;
+          expandtab = true;
+          cursorline = true;
+          clipboard = "unnamedplus";
+          mouse = "a";
+          updatetime = 300;
+          termguicolors = true;
+        };
 
-        " Leader key setup
-        let mapleader=" "    " Set leader key to space
-      '';
+        globals = {
+          mapleader = " ";
+        };
 
-      # Plugins section
-      packages.myVimPackage = with pkgs.vimPlugins; {
-        start = [
-          # gruvbox               # Add the Gruvbox colorscheme here
-          ctrlp
-          # telescope-nvim
-          # nvim-treesitter
-          # nvim-lspconfig
-          # cmp-nvim-lsp
-          # luasnip
-          # vimtex
-          # gitsigns-nvim
-          # lualine-nvim
-          # nvim-tree-lua
-        ];
+        # Add transparent.nvim plugin
+        extraPlugins = with pkgs.vimPlugins; {
+          transparent = {
+            package = transparent-nvim;
+            # The setup must be a string containing Lua code
+            setup = ''
+              require('transparent').setup({
+                enable = true,  -- Automatically enable transparency
+
+                groups = {
+                  "Normal", "NormalNC", "Comment", "Constant", "Special", "Identifier",
+                  "Statement", "PreProc", "Type", "Underlined", "Todo", "String", "Function",
+                  "Conditional", "Repeat", "Operator", "Structure", "LineNr", "NonText",
+                  "SignColumn", "CursorLine", "CursorLineNr", "StatusLine", "StatusLineNC",
+                  "EndOfBuffer"
+                },
+                extra_groups = {},
+                exclude_groups = {},
+              })
+            '';
+          };
+        };
+
+        # Additional transparency tweaks
+        # luaConfigRC.transparency-tweaks = ''
+        #   vim.opt.winblend = 10  -- Makes floating windows slightly transparent
+        #   vim.opt.pumblend = 10  -- Makes popup menu slightly transparent
+        # '';
       };
     };
   };
