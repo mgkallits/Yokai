@@ -34,11 +34,11 @@
 
 ;; other font was ComicShannsMono
 (setq doom-font (font-spec :family "JetBrainsMono Nerd Font Mono" :size 18) ;; :weight was 'semi-light
-      doom-variable-pitch-font (font-spec :family "JetBrainsMono Nerd Font" :size 18)
-      doom-big-font (font-spec :family "JetBrainsMono Nerd Font" :size 24)
+      doom-variable-pitch-font (font-spec :family "JetBrainsMono Nerd Font Mono" :size 20)
+      doom-big-font (font-spec :family "JetBrainsMono Nerd Font Mono" :size 27)
       ;; For the symbol-font don't use the 08 version because it doesn't have `bold-italic' face!!
       ;; Also read this: https://github.com/doomemacs/doomemacs/blob/master/modules/ui/unicode/README.org
-      doom-symbol-font (font-spec :family "NewComputerModern10" :size 18)
+      doom-symbol-font (font-spec :family "JetBrainsMono Nerd Font Mono" :size 18)
       ;; doom-serif-font (font-spec :family "JetBrainsMono Nerd Font Mono" :size 18)
       )
 
@@ -163,6 +163,9 @@
 
 
 #+end_src
+
+#+RESULTS:
+| ~/.dotfiles |
 
 
 # Precision scrolling
