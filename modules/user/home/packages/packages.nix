@@ -5,5 +5,6 @@
     lsd
     fastfetch
     hyprpaper
+    vscodium-fhs
   ];
 }
