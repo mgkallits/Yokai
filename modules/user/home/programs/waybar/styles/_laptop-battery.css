@@ -6,11 +6,11 @@
 ╰───────────────────────────────────╯
 */
 
-#battery.charging {
+/* #battery.charging { -> moved to _wireplumber-privacy_mic.css
   margin: 3px;
   background: @color1;
   box-shadow: inset 0px 0px 3px @color11;
-}
+} */
 
 @keyframes smooth-blink-warning {
   0% {

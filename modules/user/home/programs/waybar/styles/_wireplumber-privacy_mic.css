@@ -54,31 +54,12 @@
     font-size: 12px;
 }
 
-
-/*  Custom Privacy Module MIC */
-
-/* Microphone Module */
-/* #custom-mic {
-    background: @color3;
-    color: @background;
-    box-shadow: 0px 0px 4px @color3;
-    padding: 2px 6px;
-    margin: 2px;
-    margin-right: 5px;
-    border-radius: 5px;
-}
-
-#custom-mic.used {
-    background: @color3;
-    color: @background;
-} */
-
-
 #bluetooth,
 #wireplumber.muted,
 #custom-mic,
 #custom-mic.used,
-#idle_inhibitor.deactivated {
+#idle_inhibitor.deactivated,
+#battery.charging {
     padding: 2px 6px;
     margin: 2px;
     border-radius: 4px;
@@ -91,28 +72,12 @@
     box-shadow: inset 0px 0px 2px @color1;
 }
 
-
 #bluetooth:hover,
 #wireplumber.muted:hover,
 #custom-mic:hover,
 #custom-mic.used:hover,
-#idle_inhibitor.deactivated:hover {
+#idle_inhibitor.deactivated:hover,
+#battery.charging:hover {
     background: @color3;
     color: @background;
 }
-
-
-/* Muted State */
-/* #wireplumber.muted
-{
-    color: @background;
-    background: @color1;
-    box-shadow: inset 0px 0px 4px @color9;
-    animation: none;
-} */
-
-/* #wireplumber.muted:hover
-{
-    color: @background;
-    background: @color8;
-} */
