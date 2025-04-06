@@ -1,9 +1,14 @@
-{ config, locale, extralocale, ... }:
+{
+  config,
+  locale,
+  extralocale,
+  ...
+}:
 
 {
   # Select internationalisation properties.
   i18n.defaultLocale = "${locale}";
-  
+
   i18n.extraLocaleSettings = {
     LC_ADDRESS = "${locale}";
     LC_IDENTIFICATION = "${locale}";

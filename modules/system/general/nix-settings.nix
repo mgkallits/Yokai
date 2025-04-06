@@ -1,4 +1,9 @@
-{ config, lib, pkgs, ... }: 
+{
+  config,
+  lib,
+  pkgs,
+  ...
+}:
 
 {
   nix = {
@@ -12,12 +17,15 @@
       # Enable automatic optimization of the Nix store to improve performance
       auto-optimise-store = true;
 
-      trusted-users = [ "root" "@wheel" ];
-      
+      trusted-users = [
+        "root"
+        "@wheel"
+      ];
+
       # Enable experimental features for Nix
       experimental-features = [
-        "nix-command"  # New command-line interface for Nix
-        "flakes"       # Support for reproducible and composable package definitions
+        "nix-command" # New command-line interface for Nix
+        "flakes" # Support for reproducible and composable package definitions
       ];
 
       # Define the default cache for Nix packages
@@ -29,14 +37,14 @@
       # Additional substituters for extra package caches
       extra-substituters = [
         "https://nix-community.cachix.org" # Nix community cache
-        (lib.mkIf (config.programs.hyprland.enable) "https://hyprland.cachix.org")    # Hyprland community cache
-        "https://devenv.cachix.org"      # Devenv cache for development environments
+        (lib.mkIf (config.programs.hyprland.enable) "https://hyprland.cachix.org") # Hyprland community cache
+        "https://devenv.cachix.org" # Devenv cache for development environments
       ];
 
       # Additional trusted public keys for the extra substituters
       extra-trusted-public-keys = [
         "nix-community.cachix.org-1:mB9FSh9qf2dCimDSUo8Zy7bkq5CX+/rkCWyvRCYg3Fs="
-        (lib.mkIf (config.programs.hyprland.enable) "hyprland.cachix.org-1:a7pgxzMz7+chwVL3/pzj6jIBMioiJM7ypFP8PwtkuGc=" )
+        (lib.mkIf (config.programs.hyprland.enable) "hyprland.cachix.org-1:a7pgxzMz7+chwVL3/pzj6jIBMioiJM7ypFP8PwtkuGc=")
         "devenv.cachix.org-1:w1cLUi8dv3hnoSPGAuibQv+f9TZLr6cv/Hm9XgU50cw="
       ];
     };

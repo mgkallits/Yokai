@@ -1,4 +1,4 @@
-{ config, ...}:
+{ config, ... }:
 
 {
   services = {
@@ -6,7 +6,7 @@
 
     # qemuGuest.enable = true;
     # spice-vdagentd.enable = true;  # enable copy and paste between host and guest
- 
+
     # blueman.enable = false; # -> moved to modules/system/hardware/bluetooth.nix
   };
 
@@ -25,7 +25,6 @@
 
     # Enable printing services to support printing tasks
     # printing.enable = true;
-
 
     # Enable the Locate service for fast file searching
     # locate.enable = true;

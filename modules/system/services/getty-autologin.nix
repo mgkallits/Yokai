@@ -1,5 +1,12 @@
-{ config, pkgs, username, ... }:
+{
+  config,
+  pkgs,
+  username,
+  ...
+}:
 
 {
-  services.getty = { autologinUser = "${username}"; };  
+  services.getty = {
+    autologinUser = "${username}";
+  };
 }

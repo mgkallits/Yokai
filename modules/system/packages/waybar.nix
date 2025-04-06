@@ -21,5 +21,4 @@
     # Programs provided: `wttrbar`.
   ];
 
-
 }

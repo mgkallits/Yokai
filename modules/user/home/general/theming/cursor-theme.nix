@@ -1,7 +1,11 @@
-{ config, pkgs, lib, ... }:
+{
+  config,
+  pkgs,
+  lib,
+  ...
+}:
 
 {
-
 
   # home.pointerCursor = lib.mkForce (let
   #   getFrom = url: hash: name: {
@@ -22,10 +26,9 @@
   #     '';
   #   };
   # in
-  #   getFrom 
+  #   getFrom
   #     "https://github.com/ful1e5/notwaita-cursor/releases/download/v1.0.0-alpha1/Notwaita-Black.tar.xz"
   #     "sha256-ZLr0C5exHVz6jeLg0HGV+aZQbabBqsCuXPGodk2P0S8="
   #     "Notwaita-Black"
   # );
 }
-

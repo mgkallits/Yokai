@@ -1,4 +1,9 @@
-{ config, pkgs, lib, ... }:
+{
+  config,
+  pkgs,
+  lib,
+  ...
+}:
 
 # let
 #   wallpaper = "wallhaven-85yk9o_2560x1440.png"; # Change this dynamically as needed

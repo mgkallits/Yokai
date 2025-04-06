@@ -1,9 +1,9 @@
-{ config, pkgs, ... }: 
+{ config, pkgs, ... }:
 
 {
   # services.libinput = {
   #   enable = true;
   #   # disabling mouse acceleration
-  #   mouse = { accelProfile = "flat"; };  
+  #   mouse = { accelProfile = "flat"; };
   # };
 }

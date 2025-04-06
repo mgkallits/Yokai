@@ -1,5 +1,9 @@
-{ 
-config, options, hostname, ... }: 
+{
+  config,
+  options,
+  hostname,
+  ...
+}:
 
 {
   networking = {
@@ -9,8 +13,6 @@ config, options, hostname, ... }:
 
   # networking.interfaces.wlp1s0.useDHCP = true;
   # nentworking.wireless.interfaces = ["wlp1s0"];
-
-
 
   # networking = {
   #   interfaces = {
@@ -27,7 +29,6 @@ config, options, hostname, ... }:
   #   # nameservers = [ "192.168.1.162" "8.8.8.8" ];  # Use local DNS first, then fallback to Cloudflare.
   # };
 
-
   # networking = {
   #   interfaces.wlp6s0 = {
   #     ipv4.addresses = [{
@@ -39,11 +40,10 @@ config, options, hostname, ... }:
   #   nameservers = ["1.1.1.1" ];  # Google & Cloudflare DNS
   # };
 
+  # --- Source nixos manual
 
-# --- Source nixos manual
-
-  # Configuration 
-  # An authoritative DHCP and DNS server on a home network 
+  # Configuration
+  # An authoritative DHCP and DNS server on a home network
   # On a home network, you can use Dnsmasq as a DHCP and DNS server. New devices on your network will be configured by Dnsmasq, and instructed to use it as the DNS server by default. This allows you to rely on your own server to perform DNS queries and caching, with DNSSEC enabled.
 
   # The following example assumes that
@@ -96,6 +96,6 @@ config, options, hostname, ... }:
   #     };
   #   };
   # }
-# ---
+  # ---
 
 }

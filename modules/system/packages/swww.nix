@@ -1,10 +1,15 @@
-{ config, lib, pkgs, inputs, bleeding-edge, ... }:
+{
+  config,
+  lib,
+  pkgs,
+  inputs,
+  bleeding-edge,
+  ...
+}:
 
 {
   environment.systemPackages = (
-    if bleeding-edge then
-      [ inputs.swww.packages.${pkgs.system}.swww ]
-    else [ pkgs.swww ]
+    if bleeding-edge then [ inputs.swww.packages.${pkgs.system}.swww ] else [ pkgs.swww ]
   );
 
   # Discription: Efficient animated wallpaper daemon for wayland, controlled at runtime.

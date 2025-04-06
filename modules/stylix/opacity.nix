@@ -1,6 +1,6 @@
 { config, pkgs, ... }:
 
-{ 
+{
   stylix.opacity = {
     applications = 1.0;
     terminal = 0.75;

@@ -1,4 +1,3 @@
-
 { config, pkgs, ... }:
 
 let
@@ -48,12 +47,10 @@ let
     echo "Configuration updated successfully in ~/.config/hypr/border_colors.conf."
   '';
 
-in {
+in
+{
   home.file.".local/bin/update_border_colors.sh" = {
     text = scriptContent;
     executable = true;
   };
 }
-
-
-

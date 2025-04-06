@@ -88,7 +88,7 @@
   # Console configuration for Wayland systems
   console = {
     # Relevant for both X11 and Wayland:
-    earlySetup = true; 
+    earlySetup = true;
     # Still useful for:
     # - Early boot debugging
     # - Recovery shell keyboard support
@@ -96,7 +96,7 @@
     # NOTE: setting it to flase might give slightly faster boot (micro-optimization)
 
     # Only affects virtual consoles (TTYs), not Wayland:
-    useXkbConfig = true; 
+    useXkbConfig = true;
     # Can safely keep enabled because:
     # 1. Doesn't interfere with Wayland compositors
     # 2. Maintains proper keyboard layout in:

@@ -47,7 +47,7 @@
       gc = "sudo nix-collect-garbage && sudo nix-collect-garbage -d && sudo nix-store --gc";
       ls = "ls -l --color=auto"; # List files in long format with color output
       la = "ls -la --color=auto"; # List all files including hidden ones in long format with color
-      lA = "ls -lA --color=auto";  # List all files except '.' and '..' in long format with color
+      lA = "ls -lA --color=auto"; # List all files except '.' and '..' in long format with color
       edit = "sudo -e"; # Edit files with elevated privileges using the default editor
       update = "sudo nixos-rebuild switch --flake ~/.dotfiles/."; # Update and switch to the new NixOS configuration
       # update-all = "sudo nixos-rebuild switch --upgrade";
@@ -96,8 +96,7 @@
 
   # };
 
-
-# Enabling zsh as the shell of choice
+  # Enabling zsh as the shell of choice
   # programs.zsh.enable = true;
   # # users.dfaultUserShell = pkgs.zsh; # to set a command shell as the default for all users
 
@@ -162,9 +161,5 @@
   #     size = 10000000;
   #   };
   # };
-
-
-
-
 
 }

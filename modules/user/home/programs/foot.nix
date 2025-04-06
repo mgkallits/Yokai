@@ -5,13 +5,16 @@
     enable = true; # Whether to enable Foot terminal.
     package = pkgs.foot; # The foot package to install
     server.enable = true; # Whether to enable Foot terminal server.
-    settings ={ # Configuration written to $XDG_CONFIG_HOME/foot/foot.ini. See https://codeberg.org/dnkl/foot/src/branch/master/foot.ini for a list of available options.
+    settings = {
+      # Configuration written to $XDG_CONFIG_HOME/foot/foot.ini. See https://codeberg.org/dnkl/foot/src/branch/master/foot.ini for a list of available options.
       main = {
         include = "~/.cache/wal/colors-foot.ini";
         font = "JetBrainsMono Nerd Font Mono:size=14";
         pad = "15x15";
       };
-      colors = { alpha = 0.75; };
+      colors = {
+        alpha = 0.75;
+      };
       mouse = {
         hide-when-typing = "yes";
       };

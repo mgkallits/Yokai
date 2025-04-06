@@ -2,7 +2,6 @@
 
 {
 
-
   # xdg.desktopEntries.nemo = {
   #   name = "Nemo";
   #   exec = "${pkgs.nemo-with-extensions}/bin/nemo";
@@ -16,8 +15,6 @@
   #   };
   # };
 
-
-
   # dconf = {
   #   settings = {
   #     "org/cinnamon/desktop/applications/terminal" = {
@@ -26,9 +23,6 @@
   #     };
   #   };
   # };
-
-
-
 
   home.packages = with pkgs; [
     nemo-with-extensions # This includes the preview functionality
@@ -39,8 +33,8 @@
     lxqt.libfm-qt
     lxqt.lxqt-menu-data
 
-    ffmpegthumbnailer  # Lightweight video thumbnailer
-    
+    ffmpegthumbnailer # Lightweight video thumbnailer
+
     # nemo-seahorse
     # nemo-share
     # eog # For image previews

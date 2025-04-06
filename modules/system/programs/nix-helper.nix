@@ -1,7 +1,7 @@
 { config, pkgs, ... }:
 
 {
- programs.nh = {
+  programs.nh = {
     enable = true;
     package = pkgs.nh;
     clean.enable = true;

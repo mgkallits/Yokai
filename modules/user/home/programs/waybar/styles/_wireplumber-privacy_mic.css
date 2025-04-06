@@ -77,7 +77,8 @@
 #bluetooth,
 #wireplumber.muted,
 #custom-mic,
-#custom-mic.used {
+#custom-mic.used,
+#idle_inhibitor.deactivated {
     padding: 2px 6px;
     margin: 2px;
     border-radius: 4px;
@@ -94,7 +95,8 @@
 #bluetooth:hover,
 #wireplumber.muted:hover,
 #custom-mic:hover,
-#custom-mic.used:hover {
+#custom-mic.used:hover,
+#idle_inhibitor.deactivated:hover {
     background: @color3;
     color: @background;
 }

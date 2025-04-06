@@ -1,5 +1,5 @@
 { config, pkgs, ... }:
 
 {
-  programs.coolercontrol.enable = true;  
+  programs.coolercontrol.enable = true;
 }

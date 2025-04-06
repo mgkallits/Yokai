@@ -1,4 +1,3 @@
-
 { config, pkgs, ... }:
 
 let
@@ -59,21 +58,10 @@ let
     echo "Wallpaper set to '$WALLPAPER_NAME' and copied to '$DEST_FILE'."
   '';
 
-in {
+in
+{
   home.file.".local/bin/update_stylix_img.sh" = {
     text = scriptContent;
     executable = true;
   };
 }
-
-
-
-
-
-
-
-
-
-
-
-

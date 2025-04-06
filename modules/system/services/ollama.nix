@@ -8,17 +8,17 @@
 { config, pkgs, ... }:
 
 {
-#   services.ollama = {
-#     enable = true;
-#     # Optional: load models on startup
-#     # loadModels = [ ... ];
-#     acceleration = "rocm";
+  #   services.ollama = {
+  #     enable = true;
+  #     # Optional: load models on startup
+  #     # loadModels = [ ... ];
+  #     acceleration = "rocm";
 
-#     # environmentVariables = {
-#     #   HCC_AMDGPU_TARGET = "gfx1100"; # used to be necessary, but doesn't seem to anymore
-#     # };
-#     rocmOverrideGfx = "11.0.0";
-#   };
+  #     # environmentVariables = {
+  #     #   HCC_AMDGPU_TARGET = "gfx1100"; # used to be necessary, but doesn't seem to anymore
+  #     # };
+  #     rocmOverrideGfx = "11.0.0";
+  #   };
 
-#   services.open-webui.enable = true;
+  #   services.open-webui.enable = true;
 }

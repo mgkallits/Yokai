@@ -16,27 +16,27 @@
 
   #    To use LACT on NixOS, the package must be installed as part of the system environment. This ensures
   #    the LACT command-line tools are available:
-  
-         environment.systemPackages = with pkgs; [
-           lact # This adds the lact tool to your system-wide environment, making it accessible from the command line.
-         ];
-  
+
+  environment.systemPackages = with pkgs; [
+    lact # This adds the lact tool to your system-wide environment, making it accessible from the command line.
+  ];
+
   # 2. Adding LACT to systemd Packages
 
   #    To run LACT's daemon (lactd), the lact package must also be included in the systemd.packages list:
 
-         systemd.packages = with pkgs; [
-           lact # This ensures the required binaries for the lactd service are available to systemd.
-         ];
+  systemd.packages = with pkgs; [
+    lact # This ensures the required binaries for the lactd service are available to systemd.
+  ];
 
   # 3. Enabling the LACT Daemon (lactd)
 
   #    The daemon service lactd is responsible for applying GPU performance configurations (e.g., overclocking,
-  #    undervolting, fan curves) at boot. To enable it: 
+  #    undervolting, fan curves) at boot. To enable it:
 
-         systemd.services.lactd.wantedBy = ["multi-user.target"]; # This configuration ensures that the lactd service
-         # starts during system boot and remains active in a typical multi-user environment (the default run level on
-         # most Linux systems).
+  systemd.services.lactd.wantedBy = [ "multi-user.target" ]; # This configuration ensures that the lactd service
+  # starts during system boot and remains active in a typical multi-user environment (the default run level on
+  # most Linux systems).
 
   # How It Works?
 
@@ -49,8 +49,7 @@
 
   #   3. Service Enablement:
   #      The lactd service is configured to automatically start during boot (multi-user.target), applying GPU
-  #      settings (overclocking, undervolting, fan curves) automatically.  
-  
+  #      settings (overclocking, undervolting, fan curves) automatically.
 
   # Using LACT
 
@@ -78,4 +77,3 @@
 #   Benefits:
 #   Automatically applies GPU performance tweaks (overclocking, undervolting, fan curves) on boot without
 #   manual intervention.
-

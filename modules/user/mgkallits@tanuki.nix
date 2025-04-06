@@ -46,7 +46,9 @@
       "realtime"
     ];
     packages = with pkgs; [
-      feh kitty spotify
+      feh
+      kitty
+      spotify
     ];
   };
 
@@ -84,4 +86,3 @@
   # ];
 
 }
-

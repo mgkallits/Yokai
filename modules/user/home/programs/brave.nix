@@ -1,4 +1,9 @@
-{ config, pkgs, browser, ... }:
+{
+  config,
+  pkgs,
+  browser,
+  ...
+}:
 
 {
   programs.chromium = {

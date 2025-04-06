@@ -1,4 +1,3 @@
-
 { config, pkgs, ... }:
 
 let
@@ -64,31 +63,10 @@ let
     echo "Colors have been successfully written to $output_file"
   '';
 
-in {
+in
+{
   home.file.".local/bin/update_stylix_colors.sh" = {
     text = scriptContent;
     executable = true;
   };
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -1,4 +1,3 @@
-
 { config, pkgs, ... }:
 
 let
@@ -84,10 +83,10 @@ let
     fi
   '';
 
-in {
+in
+{
   home.file.".local/bin/wal-colors-json.sh" = {
     text = scriptContent;
     executable = true;
   };
 }
-

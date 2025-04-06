@@ -1,4 +1,4 @@
-{ config, pkgs, ... }: 
+{ config, pkgs, ... }:
 
 {
 
@@ -6,7 +6,7 @@
 
     # Enable RTKit for real-time priority management, useful for low-latency audio and video applications
     rtkit.enable = true;
-    
+
     # Enable Polkit (PolicyKit) for managing system-wide policies and permissions
     polkit = {
       enable = true;
@@ -55,6 +55,6 @@
 
   };
 
-  environment.systemPackages = [ pkgs.hyprpolkitagent ];   
+  environment.systemPackages = [ pkgs.hyprpolkitagent ];
 
 }

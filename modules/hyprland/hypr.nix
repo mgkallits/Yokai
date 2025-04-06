@@ -65,7 +65,7 @@
     pkgs.xorg.xeyes
 
     pkgs.dig
-    
+
     # TODO: sort out which pkgs are not nedded.
 
     pkgs.kdePackages.qtwayland
@@ -73,7 +73,6 @@
 
     # kdePackages.kio-fuse #to mount remote filesystems via FUSE
     # kdePackages.kio-extras #extra protocols support (sftp, fish and more)
-
 
     # Qt Wayland Support
     pkgs.libsForQt5.qt5.qtwayland
@@ -87,8 +86,6 @@
     pkgs.playerctl
     pkgs.glib
     pkgs.gio-sharp
-
-
 
     pkgs.python3
     # pkgs.python3Packages.pygobject3
@@ -105,12 +102,9 @@
 
     pkgs.vscode-fhs
 
-
     pkgs.qjackctl
     pkgs.qpwgraph
     pkgs.helvum
-
-
 
     pkgs.papirus-icon-theme
 
@@ -124,7 +118,6 @@
     pkgs.lm_sensors
 
     pkgs.stress-ng
-
 
     pkgs.imagemagick
 
@@ -172,7 +165,8 @@
     pkgs.R
 
     (pkgs.rWrapper.override {
-      packages = with pkgs.rPackages;
+      packages =
+        with pkgs.rPackages;
         # let
         #   llr = buildRPackage {
         #   name = "llr";
@@ -184,8 +178,8 @@
         #   };
         #   propagatedBuildInputs = [ rlang  knitr];
         #   nativeBuildInputs = [ rlang knitr ];};
-        # in 
-        [  
+        # in
+        [
           # knitr
           # rlang
           # llr
@@ -195,27 +189,20 @@
           ggplot2
           binom
         ];
-      }
-    )
+    })
 
     pkgs.cdrkit
 
-
-
-  ];  
-
+  ];
 
   services.fwupd.enable = true;
-  
-# programs.gnupg.agent = {
-#   enable = true;
-#   enableSSHSupport = true;
-# };
 
+  # programs.gnupg.agent = {
+  #   enable = true;
+  #   enableSSHSupport = true;
+  # };
 
-
-
-# ----
+  # ----
   # services.displayManager.enable = lib.mkForce false;
 
   # services.displayManager.sddm.enable = true;
@@ -240,8 +227,6 @@
   #   "Kvantum/ArcDark".source = "${pkgs.arc-kde-theme}/share/Kvantum/ArcDark";
   #   "Kvantum/kvantum.kvconfig".text = "[General]\ntheme=ArcDark";
   # };
-# ----
-
-
+  # ----
 
 }

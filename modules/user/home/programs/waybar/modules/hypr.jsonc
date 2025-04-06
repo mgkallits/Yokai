@@ -37,7 +37,7 @@
         "max-length": 40
     },
     "custom/bindings-info": {
-        "format": "\u202F\u202F\u200A",
+        "format": "\u202F<span font-size='13pt'></span>\u202F\u200A",
         "icon": "",
         "tooltip": true
     },

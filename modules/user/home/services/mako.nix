@@ -37,7 +37,6 @@
   home.file.".config/mako/colors-mako".source =
     config.lib.file.mkOutOfStoreSymlink "${config.xdg.cacheHome}/wal/colors-mako";
 
-
   home.packages = with pkgs; [
     libnotify # Provides notify-send
   ];

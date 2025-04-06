@@ -1,4 +1,3 @@
-
 { config, pkgs, ... }:
 
 let
@@ -77,7 +76,8 @@ let
     fi
   '';
 
-in {
+in
+{
   home.file.".local/bin/wal-colors-json2.sh" = {
     text = scriptContent;
     executable = true;

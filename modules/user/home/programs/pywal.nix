@@ -1,5 +1,7 @@
 { config, pkgs, ... }:
 
 {
-  programs.pywal = { enable = false; };
+  programs.pywal = {
+    enable = false;
+  };
 }

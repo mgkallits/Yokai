@@ -6,7 +6,7 @@
     pkgs.libsmbios
 
     pkgs.brightnessctl
-    
+
     (octaveFull.withPackages (opkgs: with opkgs; [ statistics ]))
 
     pspp
@@ -37,8 +37,6 @@
     fast-cli
 
     jq
-
-    nixfmt-rfc-style
 
     qbittorrent
 
@@ -164,15 +162,15 @@
     # grimblast
 
     #   #### Core Packages
-    #   lld gcc glibc clang udev 
+    #   lld gcc glibc clang udev
     #   wget procps killall zip unzip z busybox
     #   brightnessctl light xdg-utils
     #   pkg-config
     #   kdePackages.qtsvg usbutils lxqt.lxqt-policykit
 
     #   #### Standard Packages
-    #       sox yad 
-    #   ffmpeg 
+    #       sox yad
+    #   ffmpeg
 
     #   #### GTK
     #   gtk2 gtk3 gtk4 tela-circle-icon-theme
