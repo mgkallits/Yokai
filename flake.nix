@@ -36,6 +36,10 @@
       url = "github:LGFae/swww";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    alejandra = {
+      url = "github:kamadorueda/alejandra/3.1.0";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
     stylix = {
       url = "github:danth/stylix";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -58,7 +62,7 @@
       nixpkgs,
       nixpkgs-stable,
       nypkgs,
-      nixos-hardware, 
+      nixos-hardware,
       ...
     }:
     let
