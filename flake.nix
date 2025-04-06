@@ -120,5 +120,12 @@
             }
           ];
       };
+      # Nix Formater - Flake specific option (Source: https://nix.dev/manual/nix/2.26/command-ref/new-cli/nix3-fmt)
+      # The command `nix fmt` calls the formatter specified in the flake.
+      # Flags can be forwarded to the formatter by using -- followed by the flags.
+      # Any arguments will be forwarded to the formatter. Typically these are the files to format.
+      # As of which formatter, I prefere the official formatter for nix code (nixfmt):
+      formatter.x86_64-linux = nixpkgs.legacyPackages.x86_64-linux.nixfmt-rfc-style;
+
     };
 }
