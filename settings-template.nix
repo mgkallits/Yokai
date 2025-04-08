@@ -5,7 +5,7 @@
   # User and host information
   username = "mgkallits"; # Your username
   fullname = "Marios Georgios Kallitsounakis";
-  hostname = "kitsune"; # The hostname of the machine, one of: kitsune, tanuki
+  hostname = "tanuki"; # The hostname of the machine, one of: kitsune, tanuki
   system = "x86_64-linux"; # Target system architecture
 
   # Localization settings
@@ -23,8 +23,8 @@
   gitEmail = "mgkallits@gmail.com";
   display-manager = ""; # one of: "gdm", "" -> no display-manager meaning you have to log in using tty or a script
   bleeding-edge = false; # whether to enable hyprland and other programs latest features by getting the packages staight from github instead of nixpkgs.
-  mount-external-drives = true; # wehther to mound my external hard drives.
-  secure-boot = true; # wether to enable/disable secure boot with lanzaboote.
+  mount-external-drives = false; # wehther to mound my external hard drives.
+  secure-boot = false; # wether to enable/disable secure boot with lanzaboote.
   doomemacs = true; # whether to enable doom-emacs.
   hyprswitch = true; # whether to enable hyprswitch.
 
