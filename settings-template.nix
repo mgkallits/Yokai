@@ -1,34 +1,32 @@
 {
-
   # === General custom variables that configure the System ===
+  # Template for new users - customize these values for your system
 
   # User and host information
-  username = "mgkallits"; # Your username
-  fullname = "Marios Georgios Kallitsounakis";
-  hostname = "tanuki"; # The hostname of the machine, one of: kitsune, tanuki
-  system = "x86_64-linux"; # Target system architecture
+  username = "yourusername";
+  fullname = "Your Full Name";
+  hostname = "yourhostname"; # Must match one of your host directories
+  system = "x86_64-linux"; # or "aarch64-linux" for ARM
 
   # Localization settings
-  timezone = "Europe/Athens"; # Time zone configuration
-  locale = "en_US.UTF-8"; # Default locale for system messages
-  extralocale = "el_GR.UTF-8";
+  timezone = "Your/Timezone";
+  locale = "en_US.UTF-8";
+  extralocale = ""; # Additional locale if needed
 
-  # Other apps
-  editor = "vim";
-  # editor = "nvim";
-  terminal = "kitty";
-  visual = "code";
-  browser = "brave";
-  gitUsername = "mgkallits";
-  gitEmail = "mgkallits@gmail.com";
-  display-manager = ""; # one of: "gdm", "" -> no display-manager meaning you have to log in using tty or a script
-  bleeding-edge = false; # whether to enable hyprland and other programs latest features by getting the packages staight from github instead of nixpkgs.
-  mount-external-drives = false; # wehther to mound my external hard drives.
-  secure-boot = false; # wether to enable/disable secure boot with lanzaboote.
-  doomemacs = true; # whether to enable doom-emacs.
-  hyprswitch = true; # whether to enable hyprswitch.
+  # Application preferences
+  editor = "vim"; # or "nvim", "emacs", etc.
+  terminal = "kitty"; # or "alacritty", "foot", etc.
+  visual = "code"; # GUI editor
+  browser = "brave"; # Enable Brave Browser
 
-  # WARNING: System state version CAUTION! Do not change after initial setup (or else? TODO: improve this)
+  # Feature flags
+  display-manager = ""; # or "gdm", "" for none 
+  bleeding-edge = false;
+  mount-external-drives = false;
+  secure-boot = false;
+  doomemacs = false;
+  hyprswitch = false;
+
+  # System version (don't change after initial setup)
   version = "24.11";
-
 }
