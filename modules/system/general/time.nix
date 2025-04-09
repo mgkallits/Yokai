@@ -1,6 +1,16 @@
-{ config, timezone, ... }:
+{
+  config,
+  pkgs,
+  timezone,
+  ...
+}:
 
 {
-  time.timeZone = "${timezone}";
-  time.hardwareClockInLocalTime = true;
+  # == Time Zone & Hardware Clock ==
+
+  time = {
+    timeZone = "${timezone}";
+    hardwareClockInLocalTime = true;
+  };
+
 }

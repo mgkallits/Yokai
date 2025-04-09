@@ -1,14 +1,16 @@
 {
   config,
+  pkgs,
   locale,
   extralocale,
   ...
 }:
 
 {
-  # Select internationalisation properties.
-  i18n.defaultLocale = "${locale}";
+  # == Locale Configuration ==
 
+  i18n.defaultLocale = "${locale}";
+  
   i18n.extraLocaleSettings = {
     LC_ADDRESS = "${locale}";
     LC_IDENTIFICATION = "${locale}";
@@ -20,4 +22,5 @@
     LC_TELEPHONE = "${locale}";
     LC_TIME = "${locale}";
   };
+
 }
