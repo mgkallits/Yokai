@@ -6,10 +6,11 @@ let
     #!/bin/sh
 
     # Define paths
-    WALLS_DIR="$HOME/.dotfiles/modules/stylix/walls"
-    DEST_FILE="$HOME/.dotfiles/modules/stylix/wallpaper"
+    STYLIX_SOURCES_DIR="$HOME/.dotfiles/modules/system/stylix/sources"
+    WALLS_DIR="$STYLIX_SOURCES_DIR/walls"
+    DEST_FILE="$STYLIX_SOURCES_DIR/wallpaper"
     PICTURES_WALLS="$HOME/Pictures/Wallpapers"
-    WALL_NAME_FILE="$HOME/.dotfiles/modules/stylix/wall_name"
+    WALL_NAME_FILE="$STYLIX_SOURCES_DIR/wall_name"
     PYWAL_CACHE="$HOME/.cache/wal/wal"
 
     # Check if the Pictures/Wallpapers directory exists
@@ -18,10 +19,10 @@ let
         exit 1
     fi
 
-    # Check if ~/.dotfiles/modules/stylix/walls exists, if not, create and symlink
+    # Check if stylix walls directory exists, if not, create and symlink
     if [ ! -d "$WALLS_DIR" ]; then
-        mkdir -p "$HOME/.dotfiles/modules/stylix" # Ensure parent directory exists
-        ln -s "$PICTURES_WALLS" "$WALLS_DIR"
+        mkdir -p "$STYLIX_SOURCES_DIR" # Ensure parent directory exists
+        ln -sf "$PICTURES_WALLS" "$WALLS_DIR"
         echo "Created and symlinked '$WALLS_DIR' to '$PICTURES_WALLS'."
     fi
 
