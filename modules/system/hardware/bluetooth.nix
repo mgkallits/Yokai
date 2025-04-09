@@ -9,7 +9,7 @@
   };
 
   # Enable the blueman service, which provides blueman-applet and blueman-manager
-  services.blueman.enable = true;
+  services.blueman.enable = true; # TODO: is this needed ?
 
   # Enable experimental features, which might lead to bugs, if you want to show battery
   # charge of bluetooth devices
