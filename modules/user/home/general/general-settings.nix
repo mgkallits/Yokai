@@ -10,23 +10,31 @@
 }:
 
 {
+  # === General settings ===
+  
+  # == Home-Manager Settigns ==
+  
+  home = {
+    username = "${username}";
+    homeDirectory = "/home/${username}";
+  }; 
 
-  # == General settings ==
-  home.username = "${username}";
-  home.homeDirectory = "/home/${username}";
+  programs.home-manager = { enable = true; };
 
-  programs.home-manager.enable = true;
+  # == Font Config ==
 
-  # enables the Fontconfig service
-  fonts.fontconfig.enable = true;
+  fonts.fontconfig.enable = true;   # Enables the FontConfig service.
 
-  # manage user directories according to the XDG Base Directory Specification
-  xdg = {
-    userDirs = {
-      enable = true;
-      createDirectories = true;
-    };
+  # == XDG User Directories ==
+
+  # Manage user directories according to the XDG Base Directory Specification.
+  xdg.userDirs = {
+    enable = true;
+    createDirectories = true;
   };
+  
+  # == Home-Manager State Version ==
 
-  home.stateVersion = "${version}";
+  # *IMPORTANT*: Don't change after initial install!
+  home.stateVersion = "${version}"; # Set to your initial install version, through settings.nix.
 }
