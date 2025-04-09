@@ -19,3 +19,10 @@ add settings to user defined system settings ?
 - chnge mic script with the wpctl get-volume @DEFAULT_AUDIO_SOURCE@ | grep -q "MUTED" && echo "Mic is muted" || echo "Mic is unmuted" command
 
 - pin the hyprswitch version...
+
+
+TODO: in the morning-
+
+Notes On Migration:
+- backup pipewire settings for those ive worked with in the past for kitsune
+- backup: wofi, foot, *waybar*, hyprland, swww -> animation, + any other config that might get swipped! 
