@@ -9,8 +9,7 @@
 }:
 
 {
-
-  imports = [ inputs.home-manager.nixosModules.home-manager ];
+  # === User Configurations ===
 
   # Options
   # dwm.enable = true;
@@ -64,8 +63,15 @@
   services = {
     gvfs.enable = true;
   };
+  
+
 
   # == Home Manager ==
+
+  # Enable it's modules:  
+  imports = [ inputs.home-manager.nixosModules.home-manager ];
+
+  # Import it's configurations
   home-manager = {
     # useGlobalPkgs = true;
     # useUserPackages = true;
@@ -81,8 +87,11 @@
       };
   };
 
-  # === Nerdfonts of Choice ===
-  # MOVED to system>fonts
+  # == Nerdfonts of Choice ==
+  
+  # what's your fonts of CoIce? - A neGrouni~~ funny ...
+
+  # MOVED -> ../system/general/fonts.nix
   # fonts.packages = with pkgs; [  # Nerdfont icons override
   #   (nerdfonts.override { fonts = [ "CascadiaCode" "JetBrainsMono" "ComicShannsMono" "CommitMono" ]; })
   # ];
